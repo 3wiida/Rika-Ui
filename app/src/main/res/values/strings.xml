@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">E-commerce app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loginButtonText">Login</string>
+    <string name="signupButtonText">Sign Up</string>
+    <string name="signupFragmentUsernameLabel">User Name</string>
+    <string name="signupFragmentEmailLabel">Email</string>
+    <string name="signupFragmentPasswordLabel">Password</string>
+    <string name="signupFragmentConfirmPasswordLabel">Confirm Password</string>
+    <string name="signupDescription">Create an new account</string>
+</resources>
