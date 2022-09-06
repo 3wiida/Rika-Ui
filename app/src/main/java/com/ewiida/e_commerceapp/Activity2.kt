@@ -8,6 +8,12 @@ class Activity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity2)
+
+        sayFuck()
+    }
+
+    private fun sayFuck(){
+        Log.i("hi", "hi mahmoud")
     }
 
     fun sayhi(){
