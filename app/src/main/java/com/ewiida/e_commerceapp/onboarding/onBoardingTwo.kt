@@ -1,4 +1,4 @@
-package com.ewiida.e_commerceapp.loginscreens
+package com.ewiida.e_commerceapp.onboarding
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import androidx.viewpager2.widget.ViewPager2
 import com.ewiida.e_commerceapp.R
 import com.ewiida.e_commerceapp.databinding.FragmentOnBoardingOneBinding
 import com.ewiida.e_commerceapp.databinding.FragmentOnBoardingTwoBinding
@@ -18,8 +19,9 @@ class onBoardingTwo : Fragment() {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_on_boarding_two, container, false)
 
-        binding.floatingActionButton.setOnClickListener { view : View ->
-            view.findNavController().navigate(R.id.action_onBoardingTwo_to_onBoardingThree)
+        val viewPager = activity?.findViewById<ViewPager2>(R.id.pager)
+        binding.floatingActionButton.setOnClickListener {
+            viewPager?.currentItem = viewPager?.currentItem?.plus(1)!!
         }
 
         return binding.root
