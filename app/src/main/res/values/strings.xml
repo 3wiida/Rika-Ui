@@ -9,4 +9,8 @@
     <string name="signupFragmentPasswordLabel">Password</string>
     <string name="signupFragmentConfirmPasswordLabel">Confirm Password</string>
     <string name="signupDescription">Create an new account</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="notifications">Notifications</string>
+    <string name="profile">Profile</string>
 </resources>

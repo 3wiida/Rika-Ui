@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/_30_white_rect.xml" value="0.1995" />
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/bottom_nav_background.xml" value="0.203" />
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/bottom_nav_cart_selector.xml" value="0.203" />
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/bottom_nav_home_selector.xml" value="0.203" />
@@ -17,6 +18,7 @@
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/nav_bottom_selector.xml" value="0.203" />
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/next_btn_background.xml" value="0.1995" />
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/search_view_background.xml" value="0.1995" />
+        <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/shadow.xml" value="0.1995" />
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/shome_selector.xml" value="0.203" />
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/signup_btn.xml" value="0.203" />
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/singup_btn_background.xml" value="0.203" />

@@ -1,5 +1,6 @@
 package com.ewiida.e_commerceapp
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -12,6 +13,7 @@ import com.ewiida.e_commerceapp.mainScreens.Home
 import com.ewiida.e_commerceapp.mainScreens.Notifications
 import com.ewiida.e_commerceapp.mainScreens.Profile
 import com.google.android.material.navigation.NavigationBarView
+import github.com.st235.lib_expandablebottombar.MenuItemDescriptor
 
 class Activity2 : AppCompatActivity() {
     lateinit var binding : Activity2Binding
@@ -22,41 +24,15 @@ class Activity2 : AppCompatActivity() {
         setContentView(binding.root)
         var home=Home()
         replaceFragment(home)
-        BottomNavigationBarControler()
-        hideBars()
+       // BottomNavigationBarControler()
+       // hideBars()
 
     }
 
 
 
 
-    private fun BottomNavigationBarControler(){
-        binding.bottomNavigationView.setOnItemSelectedListener(object :NavigationBarView.OnItemSelectedListener{
-            override fun onNavigationItemSelected(item: MenuItem): Boolean {
-                when(item.itemId){
-                    R.id.menuItemHome ->{
-                        var home=Home()
-                        replaceFragment(home)
 
-                    }
-                    R.id.menuItemCart ->{
-                        var cart=Cart()
-                        replaceFragment(cart)
-                    }
-                    R.id.menuItemNotifications ->{
-                        var noti=Notifications()
-                        replaceFragment(noti)
-                    }
-                    R.id.menuItemProfile ->{
-                        var profile=Profile()
-                        replaceFragment(profile)
-                    }
-                }
-                return true
-            }
-        })
-
-    }
 
     private fun replaceFragment(f:Fragment){
         var fm=supportFragmentManager

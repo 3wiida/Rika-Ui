@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:title="" android:icon="@drawable/bottom_nav_home_selector" android:id="@+id/menuItemHome" />
-    <item android:title="" android:icon="@drawable/bottom_nav_cart_selector" android:id="@+id/menuItemCart" />
-    <item android:title="" android:icon="@drawable/bottom_nav_notification_selector" android:id="@+id/menuItemNotifications" />
-    <item android:title="" android:icon="@drawable/bottom_nav_profile_selector" android:id="@+id/menuItemProfile" />
+    <item
+        android:title="@string/home"
+        android:icon="@drawable/home"
+        android:id="@+id/menuItemHome"
+        app:exb_color="#000"/>
+    <item
+        android:title="@string/cart"
+        android:icon="@drawable/cart"
+        android:id="@+id/menuItemCart"
+        app:exb_color="#000"/>
+    <item
+        android:title="@string/notifications"
+        android:icon="@drawable/notification"
+        android:id="@+id/menuItemNotifications"
+        app:exb_color="#000"/>
+    <item
+        android:title="@string/profile"
+        android:icon="@drawable/profile"
+        android:id="@+id/menuItemProfile"
+        app:exb_color="#000"/>
 </menu>
