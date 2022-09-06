@@ -15,7 +15,7 @@ import com.google.android.material.navigation.NavigationBarView
 
 class Activity2 : AppCompatActivity() {
     lateinit var binding : Activity2Binding
-    
+
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = Activity2Binding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
@@ -24,6 +24,7 @@ class Activity2 : AppCompatActivity() {
         replaceFragment(home)
         BottomNavigationBarControler()
         hideBars()
+
     }
 
 
