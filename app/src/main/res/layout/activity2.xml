@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -24,32 +24,30 @@
             app:layout_constraintVertical_bias="0.0" />
 
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/shadow"
-                app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow"
+            app:layout_constraintBottom_toBottomOf="parent">
 
-                <github.com.st235.lib_expandablebottombar.ExpandableBottomBar
-                    android:id="@+id/bottomNavigationView"
-                    android:layout_width="0dp"
-                    android:layout_height="70dp"
-                    app:exb_backgroundCornerRadius="30dp"
-                    android:visibility="visible"
-                    app:exb_backgroundColor="@color/transparent"
-                    app:exb_elevation="0dp"
-                    app:exb_itemInactiveColor="#000"
-                    app:exb_item_horizontal_margin="10dp"
-                    app:exb_items="@menu/bottom_nav_menu"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            <github.com.st235.lib_expandablebottombar.ExpandableBottomBar
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:visibility="visible"
+                app:exb_backgroundColor="@color/transparent"
+                app:exb_backgroundCornerRadius="30dp"
+                app:exb_elevation="0dp"
+                app:exb_itemInactiveColor="#000"
+                app:exb_item_horizontal_margin="10dp"
+                app:exb_items="@menu/bottom_nav_menu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

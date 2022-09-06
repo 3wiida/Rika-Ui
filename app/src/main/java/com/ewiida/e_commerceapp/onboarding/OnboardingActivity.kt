@@ -51,7 +51,6 @@ class OnboardingActivity : AppCompatActivity() {
                            lifecycle: Lifecycle) : FragmentStateAdapter(manager, lifecycle){
 
         private val fragmentList = list
-
         override fun getItemCount(): Int {
             return fragmentList.size
         }
