@@ -11,7 +11,7 @@
         android:theme="@style/Theme.EcommerceApp">
         <activity
             android:name=".loginscreens.LoginActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".onboarding.OnboardingActivity"
             android:exported="true" />

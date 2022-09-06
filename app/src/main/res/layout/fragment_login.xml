@@ -31,7 +31,6 @@
             android:layout_marginTop="8dp"
             android:backgroundTint="#666666"
 
-            android:drawableRight="@drawable/ic_baseline_check_circle_24"
             android:drawableTint="#000000"
             android:ems="10"
             android:fontFamily="@font/montreglaur"
@@ -42,22 +41,30 @@
             app:layout_constraintStart_toStartOf="@+id/guideline27"
             app:layout_constraintTop_toBottomOf="@+id/emailInputLabel" />
 
-        <EditText
-            android:id="@+id/passwordInput"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:backgroundTint="#666666"
-            android:drawableRight="@drawable/show"
-            android:drawableTint="#000000"
-            android:ems="10"
-            android:fontFamily="@font/montreglaur"
-            android:hint="Enter password"
-            android:inputType="textPassword"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/black"
+            app:hintEnabled="false"
             app:layout_constraintEnd_toStartOf="@+id/guideline28"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline27"
-            app:layout_constraintTop_toBottomOf="@+id/passwordInputLabel" />
+            app:layout_constraintTop_toBottomOf="@+id/passwordInputLabel"
+            android:paddingStart="-12dp">
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/white"
+                android:drawableTint="#000000"
+                android:ems="10"
+                android:fontFamily="@font/montreglaur"
+                android:hint="Enter password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/loginBtn"
@@ -72,7 +79,7 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline28"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline27"
-            app:layout_constraintTop_toBottomOf="@+id/passwordInput" />
+            app:layout_constraintTop_toBottomOf="@+id/input_layout3" />
 
         <TextView
             android:id="@+id/emailInputLabel"

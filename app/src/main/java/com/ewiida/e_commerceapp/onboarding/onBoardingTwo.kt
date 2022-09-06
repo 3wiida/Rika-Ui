@@ -13,16 +13,11 @@ import com.ewiida.e_commerceapp.databinding.FragmentOnBoardingOneBinding
 import com.ewiida.e_commerceapp.databinding.FragmentOnBoardingTwoBinding
 
 class onBoardingTwo : Fragment() {
-    lateinit var binding: FragmentOnBoardingTwoBinding
 
+    lateinit var binding: FragmentOnBoardingTwoBinding
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_on_boarding_two, container, false)
-
-        val viewPager = activity?.findViewById<ViewPager2>(R.id.pager)
-        binding.floatingActionButton.setOnClickListener {
-            viewPager?.currentItem = viewPager?.currentItem?.plus(1)!!
-        }
 
         return binding.root
     }

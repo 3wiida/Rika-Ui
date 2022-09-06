@@ -19,11 +19,6 @@ class onBoardingOne : Fragment() {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_on_boarding_one, container, false)
 
-        val viewPager = activity?.findViewById<ViewPager2>(R.id.pager)
-        binding.floatingActionButton.setOnClickListener {
-            viewPager?.currentItem = viewPager?.currentItem?.plus(1)!!
-        }
-
         return binding.root
     }
 }
