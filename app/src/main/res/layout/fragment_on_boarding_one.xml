@@ -41,12 +41,12 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
 
+            android:scaleType="fitXY"
+            android:src="@drawable/onboarding1"
             app:layout_constraintBottom_toTopOf="@+id/guideline34"
             app:layout_constraintEnd_toStartOf="@+id/guideline23"
             app:layout_constraintStart_toStartOf="@+id/guideline20"
-            app:layout_constraintTop_toTopOf="@+id/guideline32"
-            android:src="@drawable/onboarding1"
-            android:scaleType="fitXY" />
+            app:layout_constraintTop_toTopOf="@+id/guideline32" />
 
 
         <androidx.constraintlayout.widget.Guideline
@@ -83,9 +83,9 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/montreglaur"
             android:lineHeight="23dp"
-            android:textSize="15sp"
-            android:textColor="#666666"
             android:text="Publish up your selfies to make yourself\nmore beautiful with this app."
+            android:textColor="#666666"
+            android:textSize="15sp"
             app:layout_constraintBottom_toTopOf="@+id/guideline37"
             app:layout_constraintEnd_toStartOf="@+id/guideline38"
             app:layout_constraintHorizontal_bias="0.0"
@@ -99,19 +99,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.95" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            android:foregroundTint="#FFFFFF"
-            android:src="@drawable/arrow"
-            app:backgroundTint="#000000"
-            app:tint="#FFF"
-            app:layout_constraintBottom_toTopOf="@+id/guideline39"
-            app:layout_constraintEnd_toStartOf="@+id/guideline23" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

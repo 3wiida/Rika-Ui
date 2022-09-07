@@ -9,8 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.findNavController
-import com.ewiida.e_commerceapp.Activity2
+import com.ewiida.e_commerceapp.homeapp.HomeActivity
 import com.ewiida.e_commerceapp.R
 import com.ewiida.e_commerceapp.databinding.FragmentSuccessfulBinding
 
@@ -24,7 +23,7 @@ class successful : Fragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_successful, container, false)
 
         binding.start.setOnClickListener { view : View ->
-            var it:Intent=Intent(activity,Activity2::class.java)
+            var it:Intent=Intent(activity, HomeActivity::class.java)
             startActivity(it)
             activity?.finish()
         }

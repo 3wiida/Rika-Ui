@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_nav_graph"
+    app:startDestination="@id/splash2">
+
+    <fragment
+        android:id="@+id/splash2"
+        android:name="com.ewiida.e_commerceapp.loginscreens.Splash2"
+        android:label="Splash2" >
+        <action
+            android:id="@+id/action_splash2_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_splash2_to_signup"
+            app:destination="@id/signup" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.ewiida.e_commerceapp.loginscreens.login"
+        android:label="login" >
+        <action
+            android:id="@+id/action_login_to_successful"
+            app:destination="@id/successful"
+            app:popUpTo="@id/splash2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/signup"
+        android:name="com.ewiida.e_commerceapp.loginscreens.signup"
+        android:label="signup" >
+        <action
+            android:id="@+id/action_signup_to_successful"
+            app:destination="@id/successful"
+            app:popUpTo="@id/splash2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/successful"
+        android:name="com.ewiida.e_commerceapp.loginscreens.successful"
+        android:label="successful" />
+</navigation>

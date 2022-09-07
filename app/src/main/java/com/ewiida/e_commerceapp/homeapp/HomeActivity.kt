@@ -1,21 +1,14 @@
-package com.ewiida.e_commerceapp
+package com.ewiida.e_commerceapp.homeapp
 
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.MenuItem
 import android.view.View
 import androidx.fragment.app.Fragment
+import com.ewiida.e_commerceapp.R
 import com.ewiida.e_commerceapp.databinding.Activity2Binding
-import com.ewiida.e_commerceapp.mainScreens.Cart
 import com.ewiida.e_commerceapp.mainScreens.Home
-import com.ewiida.e_commerceapp.mainScreens.Notifications
-import com.ewiida.e_commerceapp.mainScreens.Profile
-import com.google.android.material.navigation.NavigationBarView
-import github.com.st235.lib_expandablebottombar.MenuItemDescriptor
 
-class Activity2 : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
     lateinit var binding : Activity2Binding
 
     override fun onCreate(savedInstanceState: Bundle?) {

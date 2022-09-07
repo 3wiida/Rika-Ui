@@ -33,9 +33,6 @@ class Splash2 : Fragment() {
         editor=sp.edit()
         return binding.root
 
-
-
-
     }
 
     override fun onResume() {
