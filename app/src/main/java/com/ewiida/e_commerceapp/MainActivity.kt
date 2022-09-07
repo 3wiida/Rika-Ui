@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.preference.PreferenceManager
 import android.view.View
+import com.ewiida.e_commerceapp.homeapp.HomeActivity
 import com.ewiida.e_commerceapp.loginscreens.LoginActivity
 import com.ewiida.e_commerceapp.onboarding.OnboardingActivity
 
@@ -49,7 +50,7 @@ class MainActivity : AppCompatActivity() {
                 }, 1500)
             } else {
                 Handler().postDelayed({
-                    var it = Intent(this, Activity2::class.java)
+                    var it = Intent(this, HomeActivity::class.java)
                     startActivity(it)
                     this?.finish()
                 }, 1500)
