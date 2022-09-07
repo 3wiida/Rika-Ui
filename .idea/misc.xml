@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Corptia/E-Commerce_app/E_app/app/src/main/res/drawable/ic_settings.xml" value="0.3295" />
         <entry key="..\:/Corptia/E-Commerce_app/E_app/app/src/main/res/layout/activity2.xml" value="0.36102564102564105" />
         <entry key="..\:/Corptia/E-Commerce_app/E_app/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Corptia/E-Commerce_app/E_app/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/_30_white_rect.xml" value="0.1995" />
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/bottom_nav_background.xml" value="0.203" />
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/bottom_nav_cart_selector.xml" value="0.203" />
