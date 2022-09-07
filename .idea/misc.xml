@@ -3,13 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/E_app/app/src/main/res/drawable/_30_black_rect.xml" value="0.1645" />
+        <entry key="..\:/E_app/app/src/main/res/drawable/_30_white_rect.xml" value="0.1645" />
+        <entry key="..\:/E_app/app/src/main/res/drawable/_50_black_rect.xml" value="0.1645" />
+        <entry key="..\:/E_app/app/src/main/res/drawable/_50_white_rect_with_border.xml" value="0.1645" />
+        <entry key="..\:/E_app/app/src/main/res/drawable/apply_btn_background.xml" value="0.1645" />
+        <entry key="..\:/E_app/app/src/main/res/drawable/cart_noti_background.xml" value="0.152" />
         <entry key="..\:/E_app/app/src/main/res/drawable/cate_background.xml" value="0.184" />
         <entry key="..\:/E_app/app/src/main/res/drawable/category_btn_selected_bacground.xml" value="0.184" />
         <entry key="..\:/E_app/app/src/main/res/drawable/category_btn_unselected_background.xml" value="0.184" />
+        <entry key="..\:/E_app/app/src/main/res/drawable/love_img_btn_background.xml" value="0.184" />
+        <entry key="..\:/E_app/app/src/main/res/drawable/minus_one_cart_item_btn_background.xml" value="0.152" />
+        <entry key="..\:/E_app/app/src/main/res/drawable/promocode_linearlayout.xml" value="0.1645" />
+        <entry key="..\:/E_app/app/src/main/res/drawable/signup_btn.xml" value="0.1645" />
         <entry key="..\:/E_app/app/src/main/res/layout/activity2.xml" value="0.27447916666666666" />
+        <entry key="..\:/E_app/app/src/main/res/layout/cart_item_layout.xml" value="0.264" />
         <entry key="..\:/E_app/app/src/main/res/layout/category_layout_rv.xml" value="0.22435897435897437" />
-        <entry key="..\:/E_app/app/src/main/res/layout/fragment_home.xml" value="0.27447916666666666" />
+        <entry key="..\:/E_app/app/src/main/res/layout/dummy.xml" value="0.22445489525438223" />
+        <entry key="..\:/E_app/app/src/main/res/layout/fragment_cart.xml" value="0.264" />
+        <entry key="..\:/E_app/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/E_app/app/src/main/res/layout/fragment_profile.xml" value="0.27447916666666666" />
+        <entry key="..\:/E_app/app/src/main/res/layout/top_category_rv_layout.xml" value="0.4" />
         <entry key="..\:/E_app/app/src/main/res/menu/bottom_nav_menu.xml" value="0.27447916666666666" />
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/_30_white_rect.xml" value="0.1995" />
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/bottom_nav_background.xml" value="0.203" />

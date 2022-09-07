@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/cart"
-        android:name="com.ewiida.e_commerceapp.homeapp.Cart"
+        android:name="com.ewiida.e_commerceapp.homeapp.cartpage.Cart"
         android:label="fragment_cart"
         tools:layout="@layout/fragment_cart" />
     <fragment
