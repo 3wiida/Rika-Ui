@@ -6,7 +6,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import com.ewiida.e_commerceapp.R
 import com.ewiida.e_commerceapp.databinding.Activity2Binding
-import com.ewiida.e_commerceapp.mainScreens.Home
+import com.ewiida.e_commerceapp.homeapp.homepage.Home
 
 class HomeActivity : AppCompatActivity() {
     lateinit var binding : Activity2Binding
@@ -15,16 +15,36 @@ class HomeActivity : AppCompatActivity() {
         binding = Activity2Binding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        var home=Home()
+        var home= Home()
         replaceFragment(home)
-       // BottomNavigationBarControler()
+        BottomNavigationBarControler()
        // hideBars()
 
     }
 
+    private fun BottomNavigationBarControler() {
+        binding.bottomNavigationView.onItemSelectedListener={ view,menuItem,it->
+            when(menuItem.id){
+                R.id.menuItemHome->{
+                    var f=Home()
+                    replaceFragment(f)
+                }
+                R.id.menuItemCart->{
+                    var f=Cart()
+                    replaceFragment(f)
+                }
+                R.id.menuItemNotifications->{
+                    var f=Notifications()
+                    replaceFragment(f)
+                }
+                R.id.menuItemProfile->{
+                    var f=Profile()
+                    replaceFragment(f)
+                }
+            }
 
-
-
+        }
+    }
 
 
     private fun replaceFragment(f:Fragment){

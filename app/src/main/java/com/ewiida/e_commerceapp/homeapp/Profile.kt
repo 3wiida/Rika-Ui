@@ -1,4 +1,4 @@
-package com.ewiida.e_commerceapp.mainScreens
+package com.ewiida.e_commerceapp.homeapp
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,11 +8,12 @@ import android.view.ViewGroup
 import com.ewiida.e_commerceapp.R
 
 
-class Cart : Fragment() {
+class Profile : Fragment() {
+
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cart, container, false)
+        return inflater.inflate(R.layout.fragment_profile, container, false)
     }
 
 
