@@ -3,14 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/E_app/app/src/main/res/drawable/cate_background.xml" value="0.184" />
-        <entry key="..\:/E_app/app/src/main/res/drawable/category_btn_selected_bacground.xml" value="0.184" />
-        <entry key="..\:/E_app/app/src/main/res/drawable/category_btn_unselected_background.xml" value="0.184" />
-        <entry key="..\:/E_app/app/src/main/res/layout/activity2.xml" value="0.27447916666666666" />
-        <entry key="..\:/E_app/app/src/main/res/layout/category_layout_rv.xml" value="0.22435897435897437" />
-        <entry key="..\:/E_app/app/src/main/res/layout/fragment_home.xml" value="0.27447916666666666" />
-        <entry key="..\:/E_app/app/src/main/res/layout/fragment_profile.xml" value="0.27447916666666666" />
-        <entry key="..\:/E_app/app/src/main/res/menu/bottom_nav_menu.xml" value="0.27447916666666666" />
+        <entry key="..\:/Corptia/E-Commerce_app/E_app/app/src/main/res/drawable/card_view_background.xml" value="0.3675" />
+        <entry key="..\:/Corptia/E-Commerce_app/E_app/app/src/main/res/drawable/cate_background.xml" value="0.3635" />
+        <entry key="..\:/Corptia/E-Commerce_app/E_app/app/src/main/res/drawable/category_btn_selected_bacground.xml" value="0.3665" />
+        <entry key="..\:/Corptia/E-Commerce_app/E_app/app/src/main/res/drawable/category_btn_unselected_background.xml" value="0.3665" />
+        <entry key="..\:/Corptia/E-Commerce_app/E_app/app/src/main/res/drawable/circle_btn.xml" value="0.3635" />
+        <entry key="..\:/Corptia/E-Commerce_app/E_app/app/src/main/res/drawable/ic_settings.xml" value="0.3295" />
+        <entry key="..\:/Corptia/E-Commerce_app/E_app/app/src/main/res/drawable/profile_recycler_background.xml" value="0.3665" />
+        <entry key="..\:/Corptia/E-Commerce_app/E_app/app/src/main/res/layout/activity2.xml" value="0.36102564102564105" />
+        <entry key="..\:/Corptia/E-Commerce_app/E_app/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Corptia/E-Commerce_app/E_app/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
+        <entry key="..\:/Corptia/E-Commerce_app/E_app/app/src/main/res/layout/profile_temp.xml" value="0.365625" />
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/_30_white_rect.xml" value="0.1995" />
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/bottom_nav_background.xml" value="0.203" />
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/bottom_nav_cart_selector.xml" value="0.203" />
@@ -56,5 +59,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.33" />
+      </ProjectState>
+    </option>
   </component>
 </project>
