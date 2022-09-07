@@ -1,5 +1,7 @@
 package com.ewiida.e_commerceapp.homeapp
 
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -41,12 +43,25 @@ class Profile : Fragment() {
         binding.firstGroupRecycler.adapter = adapter1
         binding.firstGroupRecycler.hasFixedSize()
 
+        adapter1.onItemClicked = {
+            if(it.name == "My Order") {
+                val intent = Intent(activity, OngoingActivity::class.java)
+                startActivity(intent)
+            }else if(it.name == "Settings") {
+                val intent = Intent(activity, SettingsActivity::class.java)
+                startActivity(intent)
+            }else{
+                Toast.makeText(activity, "There is no screen for this item!!", Toast.LENGTH_SHORT).show()
+            }
+        }
+
         binding.secondGroupRecycler.layoutManager = layoutManager2
         binding.secondGroupRecycler.adapter = adapter2
         binding.secondGroupRecycler.hasFixedSize()
 
-
-
+        adapter2.onItemClicked = {
+                Toast.makeText(activity, "There is no screen for this item!!", Toast.LENGTH_SHORT).show()
+        }
 
         return binding.root
     }

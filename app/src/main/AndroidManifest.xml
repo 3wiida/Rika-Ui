@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EcommerceApp">
         <activity
+            android:name=".homeapp.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".homeapp.OngoingActivity"
+            android:exported="false" />
+        <activity
             android:name=".loginscreens.LoginActivity"
             android:exported="true" />
         <activity

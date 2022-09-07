@@ -20,12 +20,6 @@ class onBoardingThree : Fragment() {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_on_boarding_three, container, false)
 
-//        binding.floatingActionButton.setOnClickListener { view : View ->
-//            var it:Intent= Intent(activity, LoginActivity::class.java)
-//            startActivity(it)
-//            activity?.finish()
-//        }
-
         return binding.root
     }
 }
