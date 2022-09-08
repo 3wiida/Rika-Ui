@@ -13,6 +13,7 @@ import com.ewiida.e_commerceapp.loginscreens.LoginActivity
 import com.ewiida.e_commerceapp.loginscreens.Splash2
 import com.ewiida.e_commerceapp.onboarding.OnboardingActivity
 
+
 class SettingsActivity : AppCompatActivity() {
 
     lateinit var binding : ActivitySettingsBinding
@@ -28,18 +29,21 @@ class SettingsActivity : AppCompatActivity() {
         editor=sp.edit()
 
         binding.backButton2.setOnClickListener {
-            super.onBackPressed()
+            var it=Intent(this,HomeActivity::class.java)
+            startActivity(it)
+            finish()
         }
 
-        //TODO Look at this
         binding.logoutButton.setOnClickListener {
-            //editor.putBoolean("flag",true)
-            //editor.commit()
-            //val intent = Intent(this, Splash2::class.java)
-            //startActivity(intent)
-            //this.finish()
-            Toast.makeText(this, "You logged out", Toast.LENGTH_SHORT).show()
-            super.onBackPressed()
+            editor.clear()
+            editor.putBoolean("flag",true)
+            editor.commit()
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+
+
+
+
         }
     }
 

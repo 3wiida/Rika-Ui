@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.view.marginEnd
+import androidx.core.view.marginRight
 import androidx.recyclerview.widget.RecyclerView
 import com.ewiida.e_commerceapp.R
 
@@ -40,6 +42,9 @@ class category_rv_adapter(private val context: Context, categoryList: ArrayList<
 
         holder.itemView.setOnClickListener {
             onClickListener?.invoke(item)
+        }
+        if(position==categoryList.size-1){
+            holder.itemView.marginEnd.equals(0)
         }
 
     }

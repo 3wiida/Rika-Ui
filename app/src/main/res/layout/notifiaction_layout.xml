@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginStart="15dp"
+    android:background="@drawable/_0_gray_line"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/personImg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        android:scaleType="fitXY"
+        android:src="@drawable/womanimage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+
+    <TextView
+        android:id="@+id/namePlusContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montreglaur"
+        android:lineHeight="20dp"
+        android:text="TextView"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/personImg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/notificationTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montreglaur"
+        android:text="2 hours ago"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/personImg"
+        app:layout_constraintTop_toBottomOf="@+id/namePlusContent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

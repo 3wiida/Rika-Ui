@@ -17,7 +17,7 @@
         tools:layout="@layout/fragment_cart" />
     <fragment
         android:id="@+id/notifications"
-        android:name="com.ewiida.e_commerceapp.homeapp.Notifications"
+        android:name="com.ewiida.e_commerceapp.homeapp.notificationspage.Notifications"
         android:label="fragment_notifications"
         tools:layout="@layout/fragment_notifications" />
     <fragment

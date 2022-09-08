@@ -142,6 +142,7 @@
                         android:background="@null"
                         android:fontFamily="@font/montsemibold"
                         android:hint="Promo Code"
+                        android:paddingStart="10dp"
                         android:textCursorDrawable="@null"
                         android:textSize="14sp" />
 
@@ -158,10 +159,11 @@
                     android:id="@+id/numberOfCartItems"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:textSize="14sp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="38dp"
                     android:fontFamily="@font/montsemibold"
                     android:text="number of items"
+                    android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
@@ -169,15 +171,15 @@
                     android:id="@+id/priceOfAllCartItems"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="36dp"
 
+                    android:layout_marginEnd="4dp"
                     android:fontFamily="@font/montsemibold"
                     android:text="number of items"
-                    android:textSize="20sp"
                     android:textColor="@color/black"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.709"
+                    android:textSize="20sp"
 
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
                 <!-- proceed to check section-->
@@ -185,36 +187,36 @@
                     android:id="@+id/linearLayout2"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
-                    android:layout_marginTop="140dp"
+                    android:layout_marginTop="26dp"
                     android:background="@drawable/_10_black_rect"
-                    android:orientation="horizontal"
 
+                    android:orientation="horizontal"
                     android:padding="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/cart_items_rv">
+                    app:layout_constraintTop_toBottomOf="@+id/numberOfCartItems">
 
                     <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/proceedToCheckoutBtn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="left |center"
-                        android:id="@+id/proceedToCheckoutBtn"
                         android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:paddingStart="10dp"
                         android:background="@null"
-                        android:textColor="@color/white"
                         android:fontFamily="@font/montsemibold"
+                        android:gravity="left |center"
+                        android:paddingStart="10dp"
                         android:text="Proceed to checkout"
+                        android:textColor="@color/white"
                         android:textCursorDrawable="@null"
                         android:textSize="14sp" />
 
                     <ImageButton
+                        android:id="@+id/proceedToCheckoutImageBtn"
                         android:layout_width="40dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"
-                        android:id="@+id/proceedToCheckoutImageBtn"
                         android:background="@drawable/_10_white_rect"
                         android:src="@drawable/back_arrow_black"
                         android:textColor="@color/white" />

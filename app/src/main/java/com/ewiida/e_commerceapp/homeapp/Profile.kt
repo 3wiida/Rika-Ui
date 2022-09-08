@@ -12,6 +12,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ewiida.e_commerceapp.R
 import com.ewiida.e_commerceapp.databinding.FragmentProfileBinding
+import com.ewiida.e_commerceapp.homeapp.homepage.Home
 
 class Profile : Fragment() {
 
@@ -55,6 +56,16 @@ class Profile : Fragment() {
             }
         }
 
+        binding.backButton.setOnClickListener{
+            var f= Home()
+            var fm=activity?.supportFragmentManager
+            var ft=fm?.beginTransaction()
+            ft?.replace(R.id.container,f)
+            ft?.commit()
+            var bnb=activity?.findViewById<github.com.st235.lib_expandablebottombar.ExpandableBottomBar>(R.id.bottomNavigationView)
+            bnb?.menu?.select(R.id.menuItemHome)
+        }
+
         binding.secondGroupRecycler.layoutManager = layoutManager2
         binding.secondGroupRecycler.adapter = adapter2
         binding.secondGroupRecycler.hasFixedSize()
@@ -65,5 +76,7 @@ class Profile : Fragment() {
 
         return binding.root
     }
+
+
 
 }
