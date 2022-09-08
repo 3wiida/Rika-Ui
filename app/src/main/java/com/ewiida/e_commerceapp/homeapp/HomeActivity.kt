@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.ewiida.e_commerceapp.R
+import com.ewiida.e_commerceapp.homeapp.cartpage.Cart
 import com.ewiida.e_commerceapp.databinding.Activity2Binding
 import com.ewiida.e_commerceapp.homeapp.homepage.Home
 
@@ -18,7 +19,7 @@ class HomeActivity : AppCompatActivity() {
         var home= Home()
         replaceFragment(home)
         BottomNavigationBarControler()
-       // hideBars()
+        hideBars()
 
     }
 
@@ -30,7 +31,7 @@ class HomeActivity : AppCompatActivity() {
                     replaceFragment(f)
                 }
                 R.id.menuItemCart->{
-                    var f=Cart()
+                    var f= Cart()
                     replaceFragment(f)
                 }
                 R.id.menuItemNotifications->{
@@ -56,7 +57,7 @@ class HomeActivity : AppCompatActivity() {
 
     private fun hideBars(){
         window.decorView.apply {
-            systemUiVisibility= View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+            systemUiVisibility= View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
         }
     }
 }
