@@ -16,16 +16,14 @@ class category_rv_adapter(private val context: Context, categoryList: ArrayList<
 
 
     var onClickListener: ((SubCategoryModel) -> Unit)? = null
+
+
     var categoryList = categoryList
 
     private lateinit var cListener: onCategoryClicked
 
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
-    ): category_rv_adapter.myViewHolder {
-        var v =
-            LayoutInflater.from(parent.context).inflate(R.layout.category_layout_rv, parent, false)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): category_rv_adapter.myViewHolder {
+        var v = LayoutInflater.from(parent.context).inflate(R.layout.category_layout_rv, parent, false)
         return myViewHolder(v, cListener)
     }
 
@@ -38,6 +36,8 @@ class category_rv_adapter(private val context: Context, categoryList: ArrayList<
         } else {
             holder.parent.background = (context.getDrawable(R.drawable._50_white_rect_with_border))
         }
+
+
         holder.itemView.setOnClickListener {
             onClickListener?.invoke(item)
         }
