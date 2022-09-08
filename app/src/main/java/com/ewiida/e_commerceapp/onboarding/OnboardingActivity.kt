@@ -39,7 +39,6 @@ class OnboardingActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        //TODO Fix this bug ya 3aaaaaaaam
         if(view.pager.currentItem == 0){
             this.finish()
         }else{

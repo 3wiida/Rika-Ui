@@ -37,10 +37,6 @@ class MainActivity : AppCompatActivity() {
                 startActivity(it)
                 this?.finish()
             }, 1500)
-            /*binding.constraintLayout1.setOnClickListener { view : View ->
-
-                view.findNavController().navigate(R.id.action_splash1_to_onBoardingOne)
-            }*/
         } else {
             if (!sp.getBoolean("flag2", false)) {
                 Handler().postDelayed({
