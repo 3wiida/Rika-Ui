@@ -1,6 +1,7 @@
 package com.ewiida.e_commerceapp.homeapp.notificationspage
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.ewiida.e_commerceapp.R
 import com.ewiida.e_commerceapp.databinding.FragmentNotificationsBinding
 import com.ewiida.e_commerceapp.homeapp.homepage.Home
+import kotlin.math.log
 
 
 class Notifications : Fragment() {
@@ -25,7 +27,7 @@ class Notifications : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         notificationRecyclerViewHandler()
-
+        Log.d("tag","test")
         binding.backBtn.setOnClickListener{
             var f=Home()
             var fm=activity?.supportFragmentManager
