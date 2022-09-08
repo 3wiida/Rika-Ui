@@ -357,10 +357,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true"
+                        android:fontFamily="@font/montbold"
+                        android:textAlignment="viewStart"
+                        android:background="@null"
                         app:layout_constraintBottom_toBottomOf="@+id/notificationsImage"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="@+id/notificationsImage"
-                        app:thumbTint="#FFFFFF"
+                        app:thumbTint="@color/transparent"
                         app:track="@drawable/switch_track_selector" />
 
 
@@ -391,11 +394,12 @@
                         android:id="@+id/darkModeSwitch"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
+                        android:background="@null"
                         app:layout_constraintBottom_toBottomOf="@+id/darkModeImage"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="@+id/darkModeImage"
-                        app:thumbTint="#FFFFFF"
+                        app:thumbTint="@color/transparent"
                         app:track="@drawable/switch_track_selector" />
 
                     <ImageView
@@ -429,6 +433,28 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="@id/helpCenterImage"
                         app:srcCompat="@drawable/profile_details_arrow"/>
+
+                    <TextView
+                        android:id="@+id/notificationsStateText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/montbold"
+                        android:text="on"
+                        app:layout_constraintBottom_toBottomOf="@+id/notificationsImage"
+                        app:layout_constraintEnd_toStartOf="@+id/notificationsSwitch"
+                        app:layout_constraintTop_toTopOf="@+id/notificationsImage" />
+
+                    <TextView
+                        android:id="@+id/darkModeStateText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/montbold"
+                        android:text="off"
+                        app:layout_constraintBottom_toBottomOf="@+id/darkModeImage"
+                        app:layout_constraintEnd_toStartOf="@+id/darkModeSwitch"
+                        app:layout_constraintTop_toTopOf="@+id/darkModeImage" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>

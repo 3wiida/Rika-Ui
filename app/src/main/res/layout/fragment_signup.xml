@@ -24,175 +24,26 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.7" />
 
-        <EditText
-            android:id="@+id/nameInput"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#666666"
-            android:drawableTint="#000000"
-            android:ems="10"
-            android:fontFamily="@font/montreglaur"
-            android:hint="Enter Your User name"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toStartOf="@+id/guideline28"
-            app:layout_constraintStart_toStartOf="@+id/guideline27"
-            app:layout_constraintTop_toBottomOf="@+id/nameInputLabel" />
-
-        <EditText
-            android:id="@+id/emailInput"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#666666"
-            android:drawableTint="#000000"
-            android:ems="10"
-            android:fontFamily="@font/montreglaur"
-            android:hint="Enter Your Email"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toStartOf="@+id/guideline28"
-            app:layout_constraintStart_toStartOf="@+id/guideline27"
-            app:layout_constraintTop_toBottomOf="@+id/emailInputLabel" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/input_laout1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:hintEnabled="false"
-            app:boxBackgroundColor="@android:color/transparent"
-            app:boxStrokeColor="@android:color/transparent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline28"
-            app:layout_constraintStart_toStartOf="@+id/guideline27"
-            app:layout_constraintTop_toBottomOf="@+id/passwordInputLabel"
-            app:passwordToggleEnabled="true"
-            app:passwordToggleTint="@color/black"
-            android:paddingStart="-12dp">
-
-            <EditText
-                android:id="@+id/passwordInput"
-                android:layout_width="fill_parent"
-                android:layout_height="match_parent"
-                android:backgroundTint="@color/white"
-                android:drawableTint="#000000"
-                android:ems="10"
-                android:fontFamily="@font/montreglaur"
-                android:hint="Enter password"
-                android:inputType="textPassword"
-                android:textAlignment="viewStart"/>
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/input_laout2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:hintEnabled="false"
-            app:layout_constraintEnd_toStartOf="@+id/guideline28"
-            app:layout_constraintStart_toStartOf="@+id/guideline27"
-            app:layout_constraintTop_toBottomOf="@+id/passwordreInputLabel"
-            app:passwordToggleEnabled="true"
-            app:passwordToggleTint="@color/black"
-            android:paddingStart="-12dp">
-
-            <EditText
-                android:id="@+id/passwordreInput"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
-                android:drawableTint="#000000"
-                android:ems="10"
-                android:fontFamily="@font/montreglaur"
-                android:hint="Re-write Your Password"
-                android:background="@null"
-                android:inputType="textPassword" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/signupBtn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:background="@drawable/signup_btn"
-            android:fontFamily="@font/montbold"
-            android:text="Sign Up"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            app:layout_constraintEnd_toStartOf="@+id/guideline28"
-            app:layout_constraintStart_toStartOf="@+id/guideline27"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox" />
-
-        <androidx.appcompat.widget.AppCompatCheckBox
-            android:id="@+id/checkBox"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:buttonTint="#000"
-            android:padding="2dp"
-            android:text="By creating an account you have to agree
-with our them &amp; condication."
-            android:textColor="#AAAAAA"
-            android:textColorLink="#000000"
-            app:layout_constraintEnd_toStartOf="@+id/guideline28"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline27"
-            app:layout_constraintTop_toBottomOf="@+id/input_laout2" />
-
-        <TextView
-            android:id="@+id/nameInputLabel"
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline26"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/montreglaur"
-            android:text="@string/signupFragmentUsernameLabel"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/guideline27"
-            app:layout_constraintTop_toTopOf="@+id/guideline30" />
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.32147744" />
 
-        <TextView
-            android:id="@+id/emailInputLabel"
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline27"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/montreglaur"
-            android:text="@string/signupFragmentEmailLabel"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
 
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/guideline27"
-            app:layout_constraintTop_toBottomOf="@+id/nameInput" />
-
-        <TextView
-            android:id="@+id/passwordInputLabel"
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline28"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/montreglaur"
-            android:text="@string/signupFragmentPasswordLabel"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/guideline27"
-            app:layout_constraintTop_toBottomOf="@+id/emailInput" />
-
-        <TextView
-            android:id="@+id/passwordreInputLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/montreglaur"
-            android:text="@string/signupFragmentConfirmPasswordLabel"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/guideline27"
-            app:layout_constraintTop_toBottomOf="@+id/input_laout1" />
-
-        <ImageView
-            android:id="@+id/signuoLogo"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:src="@drawable/logoblack"
-            app:layout_constraintBottom_toTopOf="@+id/guideline26"
-            app:layout_constraintEnd_toStartOf="@+id/guideline22"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline21"
-            app:layout_constraintTop_toTopOf="@+id/guideline25"
-            app:layout_constraintVertical_bias="0.0" />
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline24"
@@ -208,11 +59,30 @@ with our them &amp; condication."
             app:layout_constraintGuide_percent="0.12" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline26"
+            android:id="@+id/guideline30"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.32147744" />
+            app:layout_constraintGuide_percent="0.45" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <ImageView
+            android:id="@+id/signuoLogo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/logoblack"
+            app:layout_constraintBottom_toTopOf="@+id/guideline26"
+            app:layout_constraintEnd_toStartOf="@+id/guideline22"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline21"
+            app:layout_constraintTop_toTopOf="@+id/guideline25"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/signupTitle"
@@ -230,31 +100,187 @@ with our them &amp; condication."
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:textSize="14sp"
             android:text="@string/signupDescription"
+            android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@+id/guideline27"
             app:layout_constraintTop_toBottomOf="@+id/signupTitle" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline27"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.05" />
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toTopOf="@+id/signupBtn"
+            app:layout_constraintEnd_toStartOf="@+id/guideline28"
+            app:layout_constraintStart_toStartOf="@+id/guideline27"
+            app:layout_constraintTop_toTopOf="@+id/guideline30">
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline28"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.95" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline30"
-            android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/nameInputLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montreglaur"
+                    android:text="@string/signupFragmentUsernameLabel"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/nameInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#666666"
+                    android:drawableTint="#000000"
+                    android:ems="10"
+                    android:fontFamily="@font/montreglaur"
+                    android:hint="Enter Your User name"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nameInputLabel" />
+
+                <TextView
+                    android:id="@+id/emailInputLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montreglaur"
+
+                    android:text="@string/signupFragmentEmailLabel"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nameInput" />
+
+                <EditText
+                    android:id="@+id/emailInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#666666"
+                    android:drawableTint="#000000"
+                    android:ems="10"
+                    android:fontFamily="@font/montreglaur"
+                    android:hint="Enter Your Email"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/emailInputLabel" />
+
+                <TextView
+                    android:id="@+id/passwordInputLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montreglaur"
+                    android:text="@string/signupFragmentPasswordLabel"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/emailInput" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_laout1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="-12dp"
+                    app:boxBackgroundColor="@android:color/transparent"
+                    app:boxStrokeColor="@android:color/transparent"
+                    app:hintEnabled="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/passwordInputLabel"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/black">
+
+                    <EditText
+                        android:id="@+id/passwordInput"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/white"
+                        android:drawableTint="#000000"
+                        android:ems="10"
+                        android:fontFamily="@font/montreglaur"
+                        android:hint="Enter password"
+                        android:inputType="textPassword"
+                        android:textAlignment="viewStart" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/passwordreInputLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montreglaur"
+                    android:text="@string/signupFragmentConfirmPasswordLabel"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/input_laout1" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_laout2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="-12dp"
+                    app:hintEnabled="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/passwordreInputLabel"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/black">
+
+                    <EditText
+                        android:id="@+id/passwordreInput"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:backgroundTint="@color/white"
+                        android:drawableTint="#000000"
+                        android:ems="10"
+                        android:fontFamily="@font/montreglaur"
+                        android:hint="Re-write Your Password"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:buttonTint="#000"
+                    android:padding="2dp"
+                    android:text="By creating an account you have to agree
+with our them &amp; condication."
+                    android:textColor="#AAAAAA"
+                    android:textColorLink="#000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/input_laout2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signupBtn"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.45" />
+            android:background="@drawable/signup_btn"
+            android:fontFamily="@font/montbold"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/guideline57"
+            app:layout_constraintEnd_toStartOf="@+id/guideline28"
+            app:layout_constraintStart_toStartOf="@+id/guideline27" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
