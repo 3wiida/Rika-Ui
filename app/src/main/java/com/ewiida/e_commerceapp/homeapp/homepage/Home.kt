@@ -65,6 +65,7 @@ class Home : Fragment() {
                 listItem.selected = listItem.name ==adapterItem.name
             }
             rvAdapter.setList(categoryList)
+            binding.catename.text = "Top ${adapterItem.name}"
         }
     }
 

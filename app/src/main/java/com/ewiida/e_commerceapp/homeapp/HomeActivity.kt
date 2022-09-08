@@ -1,5 +1,6 @@
 package com.ewiida.e_commerceapp.homeapp
 
+import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -8,6 +9,7 @@ import com.ewiida.e_commerceapp.R
 import com.ewiida.e_commerceapp.homeapp.cartpage.Cart
 import com.ewiida.e_commerceapp.databinding.Activity2Binding
 import com.ewiida.e_commerceapp.homeapp.homepage.Home
+import com.ewiida.e_commerceapp.homeapp.notificationspage.Notifications
 
 class HomeActivity : AppCompatActivity() {
     lateinit var binding : Activity2Binding
@@ -20,6 +22,8 @@ class HomeActivity : AppCompatActivity() {
         replaceFragment(home)
         BottomNavigationBarControler()
         hideBars()
+
+
 
     }
 
@@ -35,7 +39,7 @@ class HomeActivity : AppCompatActivity() {
                     replaceFragment(f)
                 }
                 R.id.menuItemNotifications->{
-                    var f=Notifications()
+                    var f= Notifications()
                     replaceFragment(f)
                 }
                 R.id.menuItemProfile->{
