@@ -49,43 +49,409 @@
             app:layout_constraintGuide_percent="0.15" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/logoutButton"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:background="@drawable/logout_button_background"
-            app:layout_constraintBottom_toTopOf="@+id/guideline54"
+            android:id="@+id/userImageConstraintLayout"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:elevation="110dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline51"
             app:layout_constraintStart_toStartOf="@+id/guideline50"
-            app:layout_constraintTop_toTopOf="@+id/guideline53"
-            app:layout_constraintVertical_bias="1.0">
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montbold"
-                android:text="Log Out"
-                android:textColor="@color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/imageView4"
-                app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/guideline53">
 
             <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/textView12"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintHorizontal_chainStyle="packed"
+                android:id="@+id/settingsUserImage"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.47"
-                app:srcCompat="@drawable/ic_logout" />
+                app:srcCompat="@drawable/profile_image" />
+
+            <ImageButton
+                android:id="@+id/edit_user_image_button"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/edit_white_button_background"
+                android:elevation="2dp"
+                android:src="@drawable/ic_edit_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/uploadImageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montsemibold"
+            android:text="Upload image"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/guideline51"
+            app:layout_constraintStart_toStartOf="@+id/guideline50"
+            app:layout_constraintTop_toBottomOf="@+id/userImageConstraintLayout" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toTopOf="@+id/logoutButton"
+            app:layout_constraintEnd_toStartOf="@+id/guideline51"
+            app:layout_constraintStart_toStartOf="@+id/guideline50"
+            app:layout_constraintTop_toTopOf="@+id/guideline55">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.3" />
+
+                <TextView
+                    android:id="@+id/settingsNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montsemibold"
+                    android:text="Name"
+                    app:layout_constraintBottom_toBottomOf="@+id/settingsNameInput"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/settingsNameInput"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <EditText
+                    android:id="@+id/settingsNameInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/montreglaur"
+                    android:hint="Enter your name"
+                    android:inputType="textPersonName"
+                    android:paddingStart="20dp"
+                    android:text="Hasan Mahmud"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline56"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/settingsGenderLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montsemibold"
+                    android:text="Gender"
+                    app:layout_constraintBottom_toBottomOf="@+id/settingsGenderRadioGroup"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/settingsGenderRadioGroup"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <RadioGroup
+                    android:id="@+id/settingsGenderRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@id/MaleRadio"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline56"
+                    app:layout_constraintTop_toBottomOf="@+id/settingsNameInput">
+
+                    <RadioButton
+                        android:id="@+id/MaleRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/myorder_button_background_selector"
+                        android:buttonTint="@color/gender_color_selector"
+                        android:fontFamily="@font/montsemibold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Male"
+                        android:textColor="@color/gender_button_text_selector"
+                        android:textSize="11sp" />
+
+                    <RadioButton
+                        android:id="@+id/FemaleRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/myorder_button_background_selector"
+                        android:buttonTint="@color/gender_color_selector"
+                        android:fontFamily="@font/montsemibold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Female"
+                        android:textColor="@color/gender_button_text_selector"
+                        android:textSize="11sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/settingsAgeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montsemibold"
+                    android:text="Age"
+                    app:layout_constraintBottom_toBottomOf="@+id/settingsAgeInput"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/settingsAgeInput" />
+
+                <EditText
+                    android:id="@+id/settingsAgeInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/montreglaur"
+                    android:hint="Enter your age"
+                    android:inputType="textPersonName"
+                    android:paddingStart="20dp"
+                    android:text="22 Years"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline56"
+                    app:layout_constraintTop_toBottomOf="@+id/settingsGenderRadioGroup" />
+
+                <TextView
+                    android:id="@+id/settingsEmailLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montsemibold"
+                    android:text="Email"
+                    app:layout_constraintBottom_toBottomOf="@+id/settingsEmailInput"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/settingsEmailInput"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <EditText
+                    android:id="@+id/settingsEmailInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/montreglaur"
+                    android:hint="Enter your E-mail"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="20dp"
+                    android:text="rikafashionshop@gmai.com"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline56"
+                    app:layout_constraintTop_toBottomOf="@+id/settingsAgeInput" />
+
+                <TextView
+                    android:id="@+id/settingsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/montbold"
+                    android:text="Settings"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/settingsEmailLabel" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:background="@drawable/profile_recycler_background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/settingsTitle">
+
+
+                    <ImageView
+                        android:id="@+id/languageImage"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/profile_icons_background"
+                        android:padding="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_language_icon" />
+
+                    <ImageView
+                        android:id="@+id/languageArrow"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/languageImage"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/languageImage"
+                        app:srcCompat="@drawable/profile_details_arrow" />
+
+                    <TextView
+                        android:id="@+id/languageText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/montbold"
+                        android:text="Language"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/languageImage"
+                        app:layout_constraintStart_toEndOf="@+id/languageImage"
+                        app:layout_constraintTop_toTopOf="@+id/languageImage" />
+
+                    <TextView
+                        android:id="@+id/languageValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="24dp"
+                        android:fontFamily="@font/montbold"
+                        android:text="English"
+                        app:layout_constraintBottom_toBottomOf="@+id/languageArrow"
+                        app:layout_constraintEnd_toStartOf="@+id/languageArrow"
+                        app:layout_constraintTop_toTopOf="@+id/languageArrow" />
+
+                    <ImageView
+                        android:id="@+id/notificationsImage"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/profile_icons_background"
+                        android:padding="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/languageImage"
+                        app:srcCompat="@drawable/ic_notifications_icon" />
+
+                    <TextView
+                        android:id="@+id/notificationsText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/montbold"
+                        android:text="Notifications"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/notificationsImage"
+                        app:layout_constraintStart_toEndOf="@+id/notificationsImage"
+                        app:layout_constraintTop_toTopOf="@+id/notificationsImage" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/notificationsSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        app:layout_constraintBottom_toBottomOf="@+id/notificationsImage"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/notificationsImage"
+                        app:thumbTint="#FFFFFF"
+                        app:track="@drawable/switch_track_selector" />
+
+
+                    <ImageView
+                        android:id="@+id/darkModeImage"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/profile_icons_background"
+                        android:padding="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/notificationsImage"
+                        app:srcCompat="@drawable/ic_dark_mode_icon" />
+
+                    <TextView
+                        android:id="@+id/darkModeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/montbold"
+                        android:text="Dark Mode"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@id/darkModeImage"
+                        app:layout_constraintStart_toEndOf="@id/darkModeImage"
+                        app:layout_constraintTop_toTopOf="@id/darkModeImage"/>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/darkModeSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        app:layout_constraintBottom_toBottomOf="@+id/darkModeImage"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/darkModeImage"
+                        app:thumbTint="#FFFFFF"
+                        app:track="@drawable/switch_track_selector" />
+
+                    <ImageView
+                        android:id="@+id/helpCenterImage"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/profile_icons_background"
+                        android:padding="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/darkModeImage"
+                        app:srcCompat="@drawable/ic_help_center_icon" />
+
+                    <TextView
+                        android:id="@+id/helpCenterText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/montbold"
+                        android:text="Help Center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@id/helpCenterImage"
+                        app:layout_constraintStart_toEndOf="@id/helpCenterImage"
+                        app:layout_constraintTop_toTopOf="@id/helpCenterImage"/>
+
+                    <ImageView
+                        android:id="@+id/helpCenterArrow"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        app:layout_constraintBottom_toBottomOf="@id/helpCenterImage"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/helpCenterImage"
+                        app:srcCompat="@drawable/profile_details_arrow"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+        <Button
+            android:id="@+id/logoutButton"
+            style="@style/logout_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/black"
+            android:text="Log Out"
+            android:textColor="@color/white"
+            app:icon="@drawable/ic_logout"
+            app:iconGravity="textStart"
+            app:layout_constraintBottom_toTopOf="@+id/guideline54"
+            app:layout_constraintEnd_toStartOf="@+id/guideline51"
+            app:layout_constraintStart_toStartOf="@+id/guideline50" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline54"
@@ -93,6 +459,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.95" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

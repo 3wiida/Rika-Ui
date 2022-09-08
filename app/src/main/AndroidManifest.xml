@@ -11,7 +11,7 @@
         android:theme="@style/Theme.EcommerceApp">
         <activity
             android:name=".homeapp.SettingsActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".homeapp.OngoingActivity"
             android:exported="false" />

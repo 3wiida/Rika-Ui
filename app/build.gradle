@@ -32,6 +32,7 @@ android {
     buildFeatures{
         dataBinding true
     }
+
 }
 
 dependencies {
@@ -48,5 +49,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'com.github.st235:expandablebottombar:1.5.1'
     implementation 'me.relex:circleindicator:2.1.6'
+
+    //switch
+    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
 
 }

@@ -33,13 +33,13 @@ class SettingsActivity : AppCompatActivity() {
 
         //TODO Look at this
         binding.logoutButton.setOnClickListener {
-            //editor.putBoolean("flag",true)
-            //editor.commit()
-            //val intent = Intent(this, Splash2::class.java)
-            //startActivity(intent)
-            //this.finish()
-            Toast.makeText(this, "You logged out", Toast.LENGTH_SHORT).show()
-            super.onBackPressed()
+            editor.clear()
+            editor.putBoolean("flag", true)
+            editor.commit()
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            //Toast.makeText(this, "You logged out", Toast.LENGTH_SHORT).show()
+            //super.onBackPressed()
         }
     }
 
