@@ -104,6 +104,7 @@
             app:layout_constraintGuide_percent="0.35" />
 
         <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginBottom="8dp"
@@ -277,11 +278,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp"
-                    android:paddingStart="10dp"
-                    android:paddingEnd="10dp"
                     android:background="@drawable/profile_recycler_background"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/settingsTitle">
@@ -385,7 +386,7 @@
                         android:textColor="@color/black"
                         app:layout_constraintBottom_toBottomOf="@id/darkModeImage"
                         app:layout_constraintStart_toEndOf="@id/darkModeImage"
-                        app:layout_constraintTop_toTopOf="@id/darkModeImage"/>
+                        app:layout_constraintTop_toTopOf="@id/darkModeImage" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/darkModeSwitch"
@@ -419,7 +420,7 @@
                         android:textColor="@color/black"
                         app:layout_constraintBottom_toBottomOf="@id/helpCenterImage"
                         app:layout_constraintStart_toEndOf="@id/helpCenterImage"
-                        app:layout_constraintTop_toTopOf="@id/helpCenterImage"/>
+                        app:layout_constraintTop_toTopOf="@id/helpCenterImage" />
 
                     <ImageView
                         android:id="@+id/helpCenterArrow"
@@ -428,7 +429,7 @@
                         app:layout_constraintBottom_toBottomOf="@id/helpCenterImage"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="@id/helpCenterImage"
-                        app:srcCompat="@drawable/profile_details_arrow"/>
+                        app:srcCompat="@drawable/profile_details_arrow" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>

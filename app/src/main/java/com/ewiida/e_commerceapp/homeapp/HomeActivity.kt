@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import com.ewiida.e_commerceapp.ProductCategory
 import com.ewiida.e_commerceapp.R
 import com.ewiida.e_commerceapp.homeapp.cartpage.Cart
 import com.ewiida.e_commerceapp.databinding.Activity2Binding

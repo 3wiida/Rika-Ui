@@ -56,6 +56,10 @@ class Cart : Fragment() {
 
         var cartItemAdapter=cart_items_rv_adabter(cartItems)
         binding.cartItemsRv.adapter=cartItemAdapter
+
+        cartItemAdapter.onRemoveListener={
+            cartItemAdapter.removeItem(it)
+        }
         binding.cartItemsRv.layoutManager=LinearLayoutManager(activity)
         var itemsPrice=0
         for(i in cartItems){

@@ -32,10 +32,19 @@ class category_rv_adapter(private val context: Context, categoryList: ArrayList<
     @SuppressLint("UseCompatLoadingForDrawables")
     override fun onBindViewHolder(holder: category_rv_adapter.myViewHolder, position: Int) {
         val item = categoryList[position]
+
         holder.categoryName.text = item.name
+
         if (item.selected) {
+
             holder.parent.background = (context.getDrawable(R.drawable._50_black_rect))
-        } else {
+            holder.categoryName.setTextColor(context.getColor(R.color.white))
+
+        }
+
+        else {
+
+            holder.categoryName.setTextColor(context.getColor(R.color.black))
             holder.parent.background = (context.getDrawable(R.drawable._50_white_rect_with_border))
         }
 
@@ -43,9 +52,7 @@ class category_rv_adapter(private val context: Context, categoryList: ArrayList<
         holder.itemView.setOnClickListener {
             onClickListener?.invoke(item)
         }
-        if(position==categoryList.size-1){
-            holder.itemView.marginEnd.equals(0)
-        }
+
 
     }
 
