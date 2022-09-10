@@ -11,7 +11,7 @@
         android:theme="@style/Theme.EcommerceApp">
         <activity
             android:name=".OrderDetailsActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".CategoriesActivity"
             android:exported="false" />

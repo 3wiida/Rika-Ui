@@ -18,6 +18,7 @@ class CategoryAdapter(private var itemList : List<CategoryItem>) : RecyclerView.
         var itemImage = itemView.findViewById<ImageView>(R.id.categoryImage)
         var itemName = itemView.findViewById<TextView>(R.id.categoryName)
         var itemDesc = itemView.findViewById<TextView>(R.id.categoryDesc)
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
