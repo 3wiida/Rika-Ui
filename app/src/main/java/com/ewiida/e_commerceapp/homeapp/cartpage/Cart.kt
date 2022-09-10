@@ -1,5 +1,6 @@
 package com.ewiida.e_commerceapp.homeapp.cartpage
 
+import android.content.Intent
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
@@ -15,6 +16,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.ewiida.e_commerceapp.OrderDetailsActivity
 import com.ewiida.e_commerceapp.R
 import com.ewiida.e_commerceapp.databinding.FragmentCartBinding
 import com.ewiida.e_commerceapp.homeapp.homepage.Home
@@ -44,6 +46,19 @@ class Cart : Fragment() {
             ft?.commit()
             var bnb=activity?.findViewById<github.com.st235.lib_expandablebottombar.ExpandableBottomBar>(R.id.bottomNavigationView)
             bnb?.menu?.select(R.id.menuItemHome)
+        }
+
+        binding.linearLayout2.setOnClickListener {
+            val intent = Intent(activity, OrderDetailsActivity::class.java)
+            startActivity(intent)
+        }
+        binding.proceedToCheckoutBtn.setOnClickListener {
+            val intent = Intent(activity, OrderDetailsActivity::class.java)
+            startActivity(intent)
+        }
+        binding.proceedToCheckoutImageBtn.setOnClickListener {
+            val intent = Intent(activity, OrderDetailsActivity::class.java)
+            startActivity(intent)
         }
 
     }
