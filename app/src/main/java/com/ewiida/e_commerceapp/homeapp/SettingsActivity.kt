@@ -1,11 +1,13 @@
 package com.ewiida.e_commerceapp.homeapp
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.preference.PreferenceManager
+import android.util.Log
 import android.widget.Toast
 import com.ewiida.e_commerceapp.R
 import com.ewiida.e_commerceapp.databinding.ActivitySettingsBinding
@@ -19,6 +21,7 @@ class SettingsActivity : AppCompatActivity() {
     lateinit var sp: SharedPreferences
     lateinit var editor:SharedPreferences.Editor
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySettingsBinding.inflate(layoutInflater)
@@ -31,15 +34,29 @@ class SettingsActivity : AppCompatActivity() {
             super.onBackPressed()
         }
 
-        //TODO Look at this
         binding.logoutButton.setOnClickListener {
             editor.clear()
             editor.putBoolean("flag", true)
             editor.commit()
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-            //Toast.makeText(this, "You logged out", Toast.LENGTH_SHORT).show()
-            //super.onBackPressed()
+            val i = Intent(this, LoginActivity::class.java)
+            i.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(i)
+        }
+
+        binding.darkModeSwitch.setOnCheckedChangeListener { compoundButton, b ->
+            if(b){
+                binding.darkModeStateText.text = "on"
+            }else{
+                binding.darkModeStateText.text = "off"
+            }
+        }
+        
+        binding.notificationsSwitch.setOnCheckedChangeListener{ compoundButton, b ->
+            if(b){
+                binding.notificationsStateText.text = "on"
+            }else{
+                binding.notificationsStateText.text = "off"
+            }
         }
     }
 

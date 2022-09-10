@@ -1,5 +1,6 @@
 package com.ewiida.e_commerceapp.homeapp.homepage
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -14,6 +15,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.ewiida.e_commerceapp.CategoriesActivity
 import com.ewiida.e_commerceapp.R
 import com.ewiida.e_commerceapp.databinding.FragmentHomeBinding
 
@@ -118,5 +120,10 @@ class Home : Fragment() {
             }
 
         })
+
+        binding.categoriesViewAll.setOnClickListener {
+            val intent = Intent(activity, CategoriesActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
