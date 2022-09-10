@@ -29,5 +29,9 @@ class CategoriesActivity : AppCompatActivity() {
         binding.categoriesRecycler.adapter = adapter
         binding.categoriesRecycler.layoutManager = layoutManager
 
+        binding.backButton.setOnClickListener {
+            super.onBackPressed()
+        }
+
     }
 }

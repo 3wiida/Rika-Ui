@@ -121,7 +121,7 @@ class Home : Fragment() {
 
         })
 
-        binding.categoriesViewAll.setOnClickListener {
+        binding.categoryViewAll.setOnClickListener {
             val intent = Intent(activity, CategoriesActivity::class.java)
             startActivity(intent)
         }
