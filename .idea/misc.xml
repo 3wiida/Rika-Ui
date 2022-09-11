@@ -27,12 +27,15 @@
         <entry key="..\:/E_app/app/src/main/res/drawable/minus_one_cart_item_btn_background.xml" value="0.152" />
         <entry key="..\:/E_app/app/src/main/res/drawable/normal.xml" value="0.1645" />
         <entry key="..\:/E_app/app/src/main/res/drawable/promocode_linearlayout.xml" value="0.1645" />
+        <entry key="..\:/E_app/app/src/main/res/drawable/radio_check_selector.xml" value="0.1645" />
+        <entry key="..\:/E_app/app/src/main/res/drawable/radio_selected.xml" value="0.1645" />
+        <entry key="..\:/E_app/app/src/main/res/drawable/radio_shape.xml" value="0.1645" />
         <entry key="..\:/E_app/app/src/main/res/drawable/round_img.xml" value="0.1645" />
         <entry key="..\:/E_app/app/src/main/res/drawable/signup_btn.xml" value="0.1645" />
         <entry key="..\:/E_app/app/src/main/res/drawable/size_radio_btn_selector.xml" value="0.1645" />
         <entry key="..\:/E_app/app/src/main/res/drawable/womanimage.xml" value="0.1645" />
         <entry key="..\:/E_app/app/src/main/res/layout/activity2.xml" value="0.27447916666666666" />
-        <entry key="..\:/E_app/app/src/main/res/layout/activity_add_to_cart.xml" value="0.264" />
+        <entry key="..\:/E_app/app/src/main/res/layout/activity_add_to_cart.xml" value="0.536" />
         <entry key="..\:/E_app/app/src/main/res/layout/activity_onboarding.xml" value="0.22530996152201796" />
         <entry key="..\:/E_app/app/src/main/res/layout/activity_ongoing.xml" value="0.22530996152201796" />
         <entry key="..\:/E_app/app/src/main/res/layout/activity_settings.xml" value="0.22530996152201796" />

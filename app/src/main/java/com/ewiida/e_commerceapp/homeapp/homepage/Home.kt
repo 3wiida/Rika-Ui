@@ -17,11 +17,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.ewiida.e_commerceapp.CategoriesActivity
 import com.ewiida.e_commerceapp.R
+import com.ewiida.e_commerceapp.addToCartActivity
 import com.ewiida.e_commerceapp.databinding.FragmentHomeBinding
 
 
 class Home : Fragment() {
-
+    var bundle:Bundle= Bundle()
     lateinit var binding: FragmentHomeBinding
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -124,5 +125,13 @@ class Home : Fragment() {
             val intent = Intent(activity, CategoriesActivity::class.java)
             startActivity(intent)
         }
+        itemAdapter.setOnItemSelected(object :item_fromCategory_rv.onItemSelected{
+            override fun onItemClicked(position: Int) {
+                var it=Intent(activity,addToCartActivity::class.java)
+                it.putExtra("productName",items[position].itemName)
+                startActivity(it)
+            }
+
+        })
     }
 }
