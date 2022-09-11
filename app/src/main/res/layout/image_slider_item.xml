@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ImageView
+        android:id="@+id/imageSliderIv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ongoing3" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/_500_white_oval"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSliderIv"
+        app:tint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_love" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

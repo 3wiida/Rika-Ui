@@ -24,4 +24,5 @@
     <style name="logout_button">
         <item name="cornerRadius">12dp</item>
     </style>
+
 </resources>
