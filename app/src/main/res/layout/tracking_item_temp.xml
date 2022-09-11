@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_view_background"
+    android:layout_margin="8dp"
+    android:elevation="3dp"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/trackingItemImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/profile_icons_background"
+        android:padding="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_car_icon" />
+
+    <TextView
+        android:id="@+id/trackingItemNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/montbold"
+        android:text="US 2343445668"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/trackingItemAddress"
+        app:layout_constraintStart_toEndOf="@+id/trackingItemImage"
+        app:layout_constraintTop_toTopOf="@+id/trackingItemImage"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/trackingItemAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/montreglaur"
+        android:text="Washington - Georgia"
+        android:textColor="#666"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/trackingItemImage"
+        app:layout_constraintStart_toEndOf="@+id/trackingItemImage"
+        app:layout_constraintTop_toBottomOf="@+id/trackingItemNumber" />
+
+    <TextView
+        android:id="@+id/trackingItemStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montsemibold"
+        android:text="Delivered"
+        android:textColor="@color/_AAA"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
