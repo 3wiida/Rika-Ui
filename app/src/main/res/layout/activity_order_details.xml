@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".OrderDetailsActivity">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline67"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline68"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline69"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline71"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.96" />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle_btn"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/ic_left_arrow"
+            app:layout_constraintStart_toStartOf="@+id/guideline69"
+            app:layout_constraintTop_toTopOf="@+id/guideline67" />
+
+        <TextView
+            android:id="@+id/orderDetailsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montbold"
+            android:text="Delivery Address"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline69"
+            app:layout_constraintTop_toBottomOf="@+id/backButton" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/addressConstraint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/card_view_background"
+            android:elevation="3dp"
+            android:padding="25dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline71"
+            app:layout_constraintStart_toStartOf="@+id/guideline69"
+            app:layout_constraintTop_toBottomOf="@+id/orderDetailsTitle">
+
+            <TextView
+                android:id="@+id/streetLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montsemibold"
+                android:text="Street: "
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/streetValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3512 Pearl Street"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/streetLabel"
+                app:layout_constraintStart_toEndOf="@+id/streetLabel"
+                app:layout_constraintTop_toTopOf="@+id/streetLabel" />
+
+            <TextView
+                android:id="@+id/cityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montsemibold"
+                android:text="City: "
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/streetLabel" />
+
+            <TextView
+                android:id="@+id/cityValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montsemibold"
+                android:text="Sacramento"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cityLabel"
+                app:layout_constraintStart_toEndOf="@+id/cityLabel"
+                app:layout_constraintTop_toTopOf="@+id/cityLabel" />
+
+            <TextView
+                android:id="@+id/stateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montsemibold"
+                android:text="State/province/area: "
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cityLabel" />
+
+            <TextView
+                android:id="@+id/stateValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="California"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/stateLabel"
+                app:layout_constraintStart_toEndOf="@+id/stateLabel"
+                app:layout_constraintTop_toTopOf="@+id/stateLabel" />
+
+            <TextView
+                android:id="@+id/phoneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montsemibold"
+                android:text="Phone number: "
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stateLabel" />
+
+            <TextView
+                android:id="@+id/phoneValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="916-299-4041"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/phoneLabel"
+                app:layout_constraintStart_toEndOf="@+id/phoneLabel"
+                app:layout_constraintTop_toTopOf="@+id/phoneLabel" />
+
+            <TextView
+                android:id="@+id/zipLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montsemibold"
+                android:text="Zip code: "
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phoneLabel" />
+
+            <TextView
+                android:id="@+id/zipValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="95814"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/zipLabel"
+                app:layout_constraintStart_toEndOf="@+id/zipLabel"
+                app:layout_constraintTop_toTopOf="@+id/zipLabel" />
+
+            <TextView
+                android:id="@+id/countryCodeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montsemibold"
+                android:text="Country calling code: "
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/zipLabel" />
+
+            <TextView
+                android:id="@+id/countryCodeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/countryCodeLabel"
+                app:layout_constraintStart_toEndOf="@+id/countryCodeLabel"
+                app:layout_constraintTop_toTopOf="@+id/countryCodeLabel" />
+
+            <TextView
+                android:id="@+id/countryLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montsemibold"
+                android:text="Country: "
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/countryCodeLabel" />
+
+            <TextView
+                android:id="@+id/countryValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="United States"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/countryLabel"
+                app:layout_constraintStart_toEndOf="@+id/countryLabel"
+                app:layout_constraintTop_toTopOf="@+id/countryLabel" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/orderDetailsNestedScrollView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toTopOf="@+id/placeOrderButton"
+            app:layout_constraintEnd_toStartOf="@+id/guideline71"
+            app:layout_constraintStart_toStartOf="@+id/guideline69"
+            app:layout_constraintTop_toBottomOf="@+id/addressConstraint"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/orderDetailsNestedScrollViewConstraint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline71"
+                app:layout_constraintStart_toStartOf="@+id/guideline69"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:id="@+id/productItemsTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/montbold"
+                    android:text="Product Item"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/orderRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:overScrollMode="never"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/productItemsTitle" />
+
+                <TextView
+                    android:id="@+id/promoCodeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montbold"
+                    android:text="Promo Code"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/orderRecycler" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/promoCodeConstraint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/card_view_background"
+                    android:elevation="3dp"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/promoCodeTitle">
+
+                    <ImageView
+                        android:id="@+id/promoCodeIcon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/_10_black_rect"
+                        android:padding="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_promo_code_icon" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/montsemibold"
+                        android:text="Add Promo Code"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toTopOf="@+id/textView19"
+                        app:layout_constraintStart_toEndOf="@+id/promoCodeIcon"
+                        app:layout_constraintTop_toTopOf="@+id/promoCodeIcon"
+                        app:layout_constraintVertical_chainStyle="packed" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/montreglaur"
+                        android:text="#rika2021"
+                        android:textSize="9sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/promoCodeIcon"
+                        app:layout_constraintStart_toEndOf="@+id/promoCodeIcon"
+                        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <TextView
+            android:id="@+id/orderDetailsTotalPriceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montreglaur"
+            android:text="Total Price"
+            android:textSize="9sp"
+            app:layout_constraintBottom_toTopOf="@+id/orderDetailsTotalPriceValue"
+            app:layout_constraintStart_toStartOf="@+id/guideline69"
+            app:layout_constraintTop_toTopOf="@+id/placeOrderButton"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/orderDetailsTotalPriceValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montbold"
+            android:text="$443.00"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/placeOrderButton"
+            app:layout_constraintStart_toStartOf="@+id/guideline69"
+            app:layout_constraintTop_toBottomOf="@+id/orderDetailsTotalPriceLabel" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/placeOrderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/_50_black_rect"
+            android:fontFamily="@font/montsemibold"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="place Order"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline68"
+            app:layout_constraintEnd_toStartOf="@+id/guideline71" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

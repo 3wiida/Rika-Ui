@@ -19,52 +19,31 @@
         app:srcCompat="@drawable/categorie_new_arrivals" />
 
     <TextView
-        android:id="@+id/categoryNameLeft"
-        android:layout_width="wrap_content"
+        android:id="@+id/categoryName"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:fontFamily="@font/montbold"
-        android:text="New Arrivals"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/categoryDescLeft"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:fontFamily="@font/montsemibold"
-        android:text="208 Products"
-        android:textColor="@color/black"
-        android:textSize="11sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/categoryNameLeft" />
-
-    <TextView
-        android:id="@+id/categoryNameRight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/montbold"
         android:text="New Arrivals"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/categoryImage"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/categoryDescRight"
-        android:layout_width="wrap_content"
+        android:id="@+id/categoryDesc"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/montsemibold"
         android:text="208 Products"
         android:textColor="@color/black"
         android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/categoryNameRight" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryName" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,12 +1,10 @@
 package com.ewiida.e_commerceapp.homeapp.cartpage
 
-import android.app.AlertDialog
-import android.app.Dialog
+import android.content.Intent
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.RectF
-import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -18,6 +16,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.ewiida.e_commerceapp.OrderDetailsActivity
 import com.ewiida.e_commerceapp.R
 import com.ewiida.e_commerceapp.databinding.FragmentCartBinding
 import com.ewiida.e_commerceapp.homeapp.homepage.Home
@@ -36,7 +35,6 @@ class Cart : Fragment() {
 
 
     var bundle=Bundle()
-    lateinit var dialog:Dialog
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         cartItemsRVHadler()
@@ -49,16 +47,19 @@ class Cart : Fragment() {
             var bnb=activity?.findViewById<github.com.st235.lib_expandablebottombar.ExpandableBottomBar>(R.id.bottomNavigationView)
             bnb?.menu?.select(R.id.menuItemHome)
         }
-        binding.proceedToCheckoutBtn.setOnClickListener {
-            dialog= Dialog(requireContext())
-            dialog.setContentView(R.layout.successful_alert_dialog)
-            dialog.window?.setBackgroundDrawableResource(R.drawable._50_white_rect)
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-                dialog.window?.setBackgroundBlurRadius(100)
-            }
-            dialog.show()
-        }
 
+        binding.linearLayout2.setOnClickListener {
+            val intent = Intent(activity, OrderDetailsActivity::class.java)
+            startActivity(intent)
+        }
+        binding.proceedToCheckoutBtn.setOnClickListener {
+            val intent = Intent(activity, OrderDetailsActivity::class.java)
+            startActivity(intent)
+        }
+        binding.proceedToCheckoutImageBtn.setOnClickListener {
+            val intent = Intent(activity, OrderDetailsActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 
