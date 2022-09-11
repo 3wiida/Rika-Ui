@@ -1,9 +1,12 @@
 package com.ewiida.e_commerceapp.homeapp.cartpage
 
+import android.app.AlertDialog
+import android.app.Dialog
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.RectF
+import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -33,6 +36,7 @@ class Cart : Fragment() {
 
 
     var bundle=Bundle()
+    lateinit var dialog:Dialog
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         cartItemsRVHadler()
@@ -45,6 +49,16 @@ class Cart : Fragment() {
             var bnb=activity?.findViewById<github.com.st235.lib_expandablebottombar.ExpandableBottomBar>(R.id.bottomNavigationView)
             bnb?.menu?.select(R.id.menuItemHome)
         }
+        binding.proceedToCheckoutBtn.setOnClickListener {
+            dialog= Dialog(requireContext())
+            dialog.setContentView(R.layout.successful_alert_dialog)
+            dialog.window?.setBackgroundDrawableResource(R.drawable._50_white_rect)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                dialog.window?.setBackgroundBlurRadius(100)
+            }
+            dialog.show()
+        }
+
 
     }
 

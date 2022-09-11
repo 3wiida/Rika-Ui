@@ -1,5 +1,6 @@
 package com.ewiida.e_commerceapp
 
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -30,6 +31,8 @@ class CategoryAdapter(private var itemList : List<CategoryItem>) : RecyclerView.
         holder.itemImage.setImageResource(itemList[position].image)
 
         if(position % 2 == 0){
+
+
             holder.itemNameLeft.text = item.name
             holder.itemDescLeft.text = item.num
             holder.itemNameRight.text = null

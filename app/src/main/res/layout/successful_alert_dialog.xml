@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/_50_white_rect"
+    android:padding="50dp"
     android:orientation="vertical">
 
     <ImageView
@@ -33,11 +35,17 @@
         android:lineHeight="23dp"
         android:text="You have successfully your\nshopping cart list!" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montbold"
         android:textSize="16sp"
+        android:background="@drawable/_50_black_rect"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:layout_marginTop="35dp"
         android:text="Track Order" />
 </LinearLayout>

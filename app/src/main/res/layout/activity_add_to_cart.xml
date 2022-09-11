@@ -8,7 +8,6 @@
     tools:context=".addToCartActivity">
 
 
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline63"
         android:layout_width="wrap_content"
@@ -48,7 +47,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.05" />
-
 
 
         <ImageButton
@@ -109,11 +107,160 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#0B0909"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline63">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline69"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.96" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline68"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.048661802" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline67"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.24" />
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Herschel Supply Co."
+            android:fontFamily="@font/montsemibold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/guideline68"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montsemibold"
+            android:text="Avaliable in stok"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline69"
+            app:layout_constraintTop_toBottomOf="@+id/minusOne" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="(270 Review)"
+            android:fontFamily="@font/montreglaur"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/itemRating"
+            app:layout_constraintTop_toTopOf="@+id/itemRating" />
+
+        <TextView
+            android:id="@+id/itemDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Daypack Backpack"
+            android:fontFamily="@font/montreglaur"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline68"
+            app:layout_constraintTop_toBottomOf="@+id/itemName" />
+
+        <RatingBar
+            android:id="@+id/itemRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            style="?android:attr/ratingBarStyleSmall"
+            app:layout_constraintStart_toStartOf="@+id/guideline68"
+            app:layout_constraintTop_toBottomOf="@+id/itemDes" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/minusOne"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:text="- 1"
+            android:background="@drawable/minus_one_cart_item_btn_background"
+            app:layout_constraintEnd_toStartOf="@+id/guideline69"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Size"
+            android:fontFamily="@font/montsemibold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/guideline68"
+            app:layout_constraintTop_toTopOf="@+id/guideline67" />
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:checkedButton="@id/radioButton3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline69"
+            app:layout_constraintStart_toStartOf="@+id/guideline68"
+            app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:background="@drawable/size_radio_btn_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:gravity="center"
+                android:fontFamily="@font/montsemibold"
+                android:textSize="14sp"
+                android:textColor="@color/myorder_button_text_selector"
+                android:layout_marginEnd="10dp"
+                android:text="S" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/montsemibold"
+                android:textSize="14sp"
+                android:textColor="@color/myorder_button_text_selector"
+                android:background="@drawable/size_radio_btn_selector"
+                android:text="M" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="10dp"
+                android:fontFamily="@font/montsemibold"
+                android:textSize="14sp"
+                android:textColor="@color/myorder_button_text_selector"
+                android:background="@drawable/size_radio_btn_selector"
+                android:text="L" />
+        </RadioGroup>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
