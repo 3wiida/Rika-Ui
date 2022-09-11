@@ -14,24 +14,11 @@ class CategoriesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityCategoriesBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        val list = listOf<CategoryItem>(
-            CategoryItem("New Arrivals", "208 Products", R.drawable.categorie_new_arrivals),
-            CategoryItem("Clothes", "358 Products", R.drawable.categorie_clothes),
-            CategoryItem("Bags", "160 Products", R.drawable.categorie_bags),
-            CategoryItem("Shoes", "230 Products", R.drawable.categorie_shoes),
-            CategoryItem("Electronics", "130 Products", R.drawable.categorie_electronics)
-        )
-
-        val adapter = CategoryAdapter(list)
-        val layoutManager = LinearLayoutManager(this)
-
-        binding.categoriesRecycler.adapter = adapter
-        binding.categoriesRecycler.layoutManager = layoutManager
-
-        binding.backButton.setOnClickListener {
-            super.onBackPressed()
-        }
+        var fm=supportFragmentManager
+        var ft=fm.beginTransaction()
+        var f=CategoriesFragment()
+        ft.replace(R.id.MyNavHost,f)
+        ft.commit()
 
     }
 }

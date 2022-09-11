@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.ewiida.e_commerceapp.CategoriesActivity
+import com.ewiida.e_commerceapp.OrderTrackingActivity
 import com.ewiida.e_commerceapp.R
 import com.ewiida.e_commerceapp.addToCartActivity
 import com.ewiida.e_commerceapp.databinding.FragmentHomeBinding
@@ -130,8 +131,18 @@ class Home : Fragment() {
                 var it=Intent(activity,addToCartActivity::class.java)
                 it.putExtra("productName",items[position].itemName)
                 startActivity(it)
+                activity?.finish()
             }
 
         })
+
+        binding.cardView.setOnClickListener {
+            var intent = Intent(activity, OrderTrackingActivity::class.java)
+            startActivity(intent)
+        }
+        binding.imageButton3.setOnClickListener {
+            var intent = Intent(activity, OrderTrackingActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

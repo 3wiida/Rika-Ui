@@ -36,7 +36,7 @@
         android:text="You have successfully your\nshopping cart list!" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/trackOrder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montbold"

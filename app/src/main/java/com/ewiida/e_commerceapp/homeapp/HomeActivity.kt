@@ -19,12 +19,18 @@ class HomeActivity : AppCompatActivity() {
         binding = Activity2Binding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        var home= Home()
-        replaceFragment(home)
+
         BottomNavigationBarControler()
         hideBars()
-
-
+        var itt=intent
+        if(itt.getBooleanExtra("fromAddToCart",false)){
+            var cart=Cart()
+            replaceFragment(cart)
+            binding.bottomNavigationView.menu.select(R.id.menuItemCart)
+        }else{
+            var home= Home()
+            replaceFragment(home)
+        }
 
     }
 

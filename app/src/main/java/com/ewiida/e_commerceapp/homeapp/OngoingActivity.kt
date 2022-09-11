@@ -1,9 +1,11 @@
 package com.ewiida.e_commerceapp.homeapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.ewiida.e_commerceapp.OrderTrackingActivity
 import com.ewiida.e_commerceapp.R
 import com.ewiida.e_commerceapp.databinding.ActivityOngoingBinding
 
@@ -27,6 +29,12 @@ class OngoingActivity : AppCompatActivity() {
         binding.myOrdersRecycler.adapter = adapter
         binding.myOrdersRecycler.layoutManager = layoutManager
 
+        adapter.onItemClicked = {
+            var intent = Intent(this, OrderTrackingActivity::class.java)
+            intent.putExtra("fromOngoing",true)
+            startActivity(intent)
+        }
+
         binding.radioGroup.setOnCheckedChangeListener{radioGroup, ID->
             if(ID == R.id.ongoingRadio){
                 list.clear()
@@ -36,6 +44,12 @@ class OngoingActivity : AppCompatActivity() {
 
                 adapter = MyOrdersAdapter(list)
                 binding.myOrdersRecycler.adapter = adapter
+
+                adapter.onItemClicked = {
+                    var intent = Intent(this, OrderTrackingActivity::class.java)
+                    intent.putExtra("fromOngoing",true)
+                    startActivity(intent)
+                }
             }
             else if(ID == R.id.completedRadio){
                 list.clear()
@@ -43,12 +57,21 @@ class OngoingActivity : AppCompatActivity() {
                 list.add(Order(R.drawable.completed2, "On Ear Headphone", "Beats Solo3 Wireless Kulak", "8", "XL"))
                 adapter = MyOrdersAdapter(list)
                 binding.myOrdersRecycler.adapter = adapter
+
+                adapter.onItemClicked = {
+                    var intent = Intent(this, OrderTrackingActivity::class.java)
+                    intent.putExtra("fromOngoing",true)
+
+                    startActivity(intent)
+                }
             }
         }
 
         binding.backButton.setOnClickListener {
             super.onBackPressed()
         }
+
+
 
 
     }

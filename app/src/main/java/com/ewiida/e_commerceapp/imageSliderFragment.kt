@@ -9,15 +9,16 @@ import androidx.viewpager.widget.ViewPager
 import me.relex.circleindicator.CircleIndicator
 
 
-class imageSliderFragment : Fragment() {
+    class imageSliderFragment : Fragment() {
 
-    lateinit var viewPager: ViewPager
-    var imageList:ArrayList<Int> = ArrayList()
 
-    lateinit var viewPagerAdapter: ImageSliderAdapter
-    lateinit var indicator: CircleIndicator
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_image_slider, container, false)
+        lateinit var viewPager: ViewPager
+        var imageList:ArrayList<Int> = ArrayList()
+
+        lateinit var viewPagerAdapter: ImageSliderAdapter
+        lateinit var indicator: CircleIndicator
+        override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+            return inflater.inflate(R.layout.fragment_image_slider, container, false)
 
 
     }

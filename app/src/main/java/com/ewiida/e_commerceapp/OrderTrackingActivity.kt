@@ -1,9 +1,11 @@
 package com.ewiida.e_commerceapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ewiida.e_commerceapp.databinding.ActivityOrderTrackingBinding
+import com.ewiida.e_commerceapp.homeapp.HomeActivity
 
 class OrderTrackingActivity : AppCompatActivity() {
 
@@ -25,9 +27,16 @@ class OrderTrackingActivity : AppCompatActivity() {
         val layoutManager = LinearLayoutManager(this)
         binding.trackingRecycler.adapter = adapter
         binding.trackingRecycler.layoutManager = layoutManager
-
+        var itt=intent
         binding.backButton.setOnClickListener {
-            super.onBackPressed()
+            if(itt.getBooleanExtra("fromOngoing",false)){
+                onBackPressed()
+            }else{
+                val intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
+
         }
 
     }

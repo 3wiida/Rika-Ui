@@ -1,7 +1,10 @@
 package com.ewiida.e_commerceapp
 
+import android.app.Dialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ewiida.e_commerceapp.databinding.ActivityOrderDetailsBinding
 
@@ -32,7 +35,16 @@ class OrderDetailsActivity : AppCompatActivity() {
         }
 
         binding.placeOrderButton.setOnClickListener {
-            //TODO Go to the prompt which mahmoud will do
+            var dialog=Dialog(this)
+            dialog.setContentView(R.layout.successful_alert_dialog)
+            dialog.window!!.setBackgroundDrawableResource(R.drawable._50_white_rect)
+            dialog.window?.findViewById<Button>(R.id.trackOrder)?.setOnClickListener {
+                var it=Intent(this,OrderTrackingActivity::class.java)
+                it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(it)
+
+            }
+            dialog.show()
         }
     }
 }

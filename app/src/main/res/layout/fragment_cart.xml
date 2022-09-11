@@ -207,7 +207,7 @@
                         android:textSize="14sp" />
 
                     <ImageButton
-                        android:id="@+id/proceedToCheckoutImageBtn"
+                        android:id="@+id/addToCartBtn"
                         android:layout_width="40dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"

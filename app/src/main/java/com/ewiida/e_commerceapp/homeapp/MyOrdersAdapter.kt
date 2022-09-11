@@ -9,6 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ewiida.e_commerceapp.R
 
 class MyOrdersAdapter(private var itemList: List<Order>) : RecyclerView.Adapter<MyOrdersAdapter.MyViewHolder>() {
+
+    var onItemClicked : ((Order) -> Unit)? = null
+
     inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         var itemImage = itemView.findViewById<ImageView>(R.id.orderImage)
         var itemName = itemView.findViewById<TextView>(R.id.name)
@@ -29,6 +32,11 @@ class MyOrdersAdapter(private var itemList: List<Order>) : RecyclerView.Adapter<
         holder.itemModel.text = item.model
         holder.itemQuality.text = item.quality
         holder.itemSize.text = item.size
+
+        holder.itemView.setOnClickListener {
+            onItemClicked?.invoke(item)
+        }
+
     }
 
     override fun getItemCount(): Int {

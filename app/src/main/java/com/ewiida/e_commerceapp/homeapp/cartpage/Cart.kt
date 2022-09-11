@@ -56,7 +56,7 @@ class Cart : Fragment() {
             val intent = Intent(activity, OrderDetailsActivity::class.java)
             startActivity(intent)
         }
-        binding.proceedToCheckoutImageBtn.setOnClickListener {
+        binding.addToCartBtn.setOnClickListener {
             val intent = Intent(activity, OrderDetailsActivity::class.java)
             startActivity(intent)
         }
