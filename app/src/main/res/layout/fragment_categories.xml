@@ -7,7 +7,7 @@
         android:id="@+id/frameLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".CategoriesFragment">
+        tools:context=".homeapp.homepage.categoriespages.CategoriesFragment">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline79"
@@ -18,8 +18,8 @@
 
         <ImageButton
             android:id="@+id/backButton3"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="@dimen/_40dp"
+            android:layout_height="@dimen/_40dp"
             android:background="@drawable/circle_btn"
             android:backgroundTint="@color/black"
             android:src="@drawable/ic_left_arrow"
@@ -31,10 +31,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/search_view_background"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="@dimen/_24dp"
             android:iconifiedByDefault="false"
             android:queryBackground="@android:color/transparent"
             android:queryHint="Search Categories"
+            android:textSize="@dimen/_13sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +45,7 @@
             android:id="@+id/categoriesRecycler"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/_16dp"
             android:overScrollMode="never"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

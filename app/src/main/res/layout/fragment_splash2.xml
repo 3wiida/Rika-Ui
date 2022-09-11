@@ -8,7 +8,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/splash2"
-
         tools:context=".splash2">
 
         <androidx.constraintlayout.widget.Guideline
@@ -64,10 +63,11 @@
             android:id="@+id/goToLoginBtn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="@dimen/_8dp"
             android:background="@drawable/login_btn_background"
             android:fontFamily="@font/montbold"
             android:text="@string/loginButtonText"
+            android:textSize="@dimen/_16sp"
             android:textAllCaps="false"
             app:layout_constraintBottom_toTopOf="@+id/goToSignupBtn"
             app:layout_constraintEnd_toStartOf="@+id/guideline9"
@@ -81,6 +81,7 @@
             android:background="@drawable/singup_btn_background"
             android:fontFamily="@font/montbold"
             android:text="@string/signupButtonText"
+            android:textSize="@dimen/_16sp"
             android:textAllCaps="false"
             android:textColor="@color/white"
             app:layout_constraintBottom_toTopOf="@+id/guideline12"

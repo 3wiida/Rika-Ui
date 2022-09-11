@@ -6,20 +6,20 @@
         android:title="@string/home"
         android:icon="@drawable/home"
         android:id="@+id/menuItemHome"
-        app:exb_color="#000"/>
+        app:exb_color="@color/black"/>
     <item
         android:title="@string/cart"
         android:icon="@drawable/cart"
         android:id="@+id/menuItemCart"
-        app:exb_color="#000"/>
+        app:exb_color="@color/black"/>
     <item
         android:title="@string/notifications"
         android:icon="@drawable/notification"
         android:id="@+id/menuItemNotifications"
-        app:exb_color="#000"/>
+        app:exb_color="@color/black"/>
     <item
         android:title="@string/profile"
         android:icon="@drawable/profile"
         android:id="@+id/menuItemProfile"
-        app:exb_color="#000"/>
+        app:exb_color="@color/black"/>
 </menu>

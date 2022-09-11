@@ -28,14 +28,14 @@
             android:id="@+id/emailInput"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:backgroundTint="#666666"
-
-            android:drawableTint="#000000"
+            android:layout_marginTop="@dimen/_8dp"
+            android:backgroundTint="@color/_666"
+            android:drawableTint="@color/black"
             android:ems="10"
             android:fontFamily="@font/montreglaur"
             android:hint="Enter Your Email"
             android:inputType="textPersonName"
+            android:textSize="@dimen/_14sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline28"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline27"
@@ -53,14 +53,16 @@
             app:layout_constraintStart_toStartOf="@+id/guideline27"
             app:layout_constraintTop_toBottomOf="@+id/passwordInputLabel"
             android:paddingStart="-12dp">
+
             <EditText
                 android:id="@+id/passwordInput"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/_8dp"
                 android:backgroundTint="@color/white"
-                android:drawableTint="#000000"
+                android:drawableTint="@color/black"
                 android:ems="10"
+                android:textSize="@dimen/_14sp"
                 android:fontFamily="@font/montreglaur"
                 android:hint="Enter password"
                 android:inputType="textPassword" />
@@ -70,10 +72,11 @@
             android:id="@+id/loginBtn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="@dimen/_48dp"
             android:background="@drawable/signup_btn"
             android:fontFamily="@font/montbold"
             android:text="@string/loginButtonText"
+            android:textSize="@dimen/_16sp"
             android:textAllCaps="false"
             android:textColor="@color/white"
             app:layout_constraintEnd_toStartOf="@+id/guideline28"
@@ -85,11 +88,10 @@
             android:id="@+id/emailInputLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/montreglaur"
-
+            android:fontFamily="@font/montsemibold"
             android:text="@string/signupFragmentEmailLabel"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="@dimen/_16sp"
             app:layout_constraintStart_toStartOf="@+id/guideline27"
             app:layout_constraintTop_toTopOf="@+id/guideline30" />
 
@@ -97,11 +99,11 @@
             android:id="@+id/passwordInputLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/montreglaur"
+            android:layout_marginTop="@dimen/_8dp"
+            android:fontFamily="@font/montsemibold"
             android:text="@string/signupFragmentPasswordLabel"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="@dimen/_16sp"
             app:layout_constraintStart_toStartOf="@+id/guideline27"
             app:layout_constraintTop_toBottomOf="@+id/emailInput" />
 
@@ -141,11 +143,11 @@
             android:id="@+id/signupTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/montreglaur"
+            android:layout_marginTop="@dimen/_16dp"
+            android:fontFamily="@font/montsemibold"
             android:text="Welcome!"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="@dimen/_20sp"
             app:layout_constraintStart_toStartOf="@+id/guideline27"
             app:layout_constraintTop_toTopOf="@+id/guideline26" />
 
@@ -153,9 +155,11 @@
             android:id="@+id/signupDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/_8dp"
             android:text="please login to continue our app"
-            android:textSize="14sp"
+            android:textSize="@dimen/_14sp"
+            android:fontFamily="@font/montreglaur"
+            android:textColor="@color/_666"
             app:layout_constraintStart_toStartOf="@+id/guideline27"
             app:layout_constraintTop_toBottomOf="@+id/signupTitle" />
 

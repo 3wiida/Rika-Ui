@@ -1,12 +1,12 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:bottom="3dp"
-        android:left="3dp"
-        android:right="3dp"
-        android:top="3dp">
+        android:bottom="@dimen/_3dp"
+        android:left="@dimen/_3dp"
+        android:right="@dimen/_3dp"
+        android:top="@dimen/_3dp">
         <shape>
-            <corners android:radius="6dp"/>
-            <solid android:color="#DDD"/>
+            <corners android:radius="@dimen/_6dp"/>
+            <solid android:color="@color/_DDD"/>
         </shape>
     </item>
 </layer-list>

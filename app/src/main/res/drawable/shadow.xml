@@ -4,37 +4,37 @@
     <item>
         <shape>
             <padding
-                android:left="3dp"
-                android:right="3dp"
-                android:top="5dp" />
-            <solid android:color="#0D343435" />
+                android:left="@dimen/_3dp"
+                android:right="@dimen/_3dp"
+                android:top="@dimen/_5dp" />
+            <solid android:color="@color/_0D343435" />
             <corners
-                android:topLeftRadius="30dp"
-                android:topRightRadius="30dp" />
+                android:topLeftRadius="@dimen/_30dp"
+                android:topRightRadius="@dimen/_30dp" />
         </shape>
     </item>
     <item>
         <shape>
             <padding
-                android:left="2dp"
-                android:right="2dp"
-                android:top="3dp" />
-            <solid android:color="#08494A4C" />
+                android:left="@dimen/_2dp"
+                android:right="@dimen/_2dp"
+                android:top="@dimen/_3dp" />
+            <solid android:color="@color/_08494A4C" />
             <corners
-                android:topLeftRadius="30dp"
-                android:topRightRadius="30dp" />
+                android:topLeftRadius="@dimen/_30dp"
+                android:topRightRadius="@dimen/_30dp" />
         </shape>
     </item>
     <item>
         <shape>
             <padding
-                android:left="1dp"
-                android:right="1dp"
-                android:top="1dp" />
-            <solid android:color="#032C2D2E" />
+                android:left="@dimen/_1dp"
+                android:right="@dimen/_1dp"
+                android:top="@dimen/_1dp" />
+            <solid android:color="@color/_032C2D2E" />
             <corners
-                android:topLeftRadius="30dp"
-                android:topRightRadius="30dp" />
+                android:topLeftRadius="@dimen/_30dp"
+                android:topRightRadius="@dimen/_30dp" />
         </shape>
     </item>
 
@@ -42,10 +42,10 @@
     <!-- Background -->
     <item>
         <shape>
-            <solid android:color="#ffffff" />
+            <solid android:color="@color/white" />
             <corners
-                android:topLeftRadius="25dp"
-                android:topRightRadius="25dp" />
+                android:topLeftRadius="@dimen/_25dp"
+                android:topRightRadius="@dimen/_25dp" />
         </shape>
     </item>
 </layer-list>

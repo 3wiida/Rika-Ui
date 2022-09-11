@@ -1,56 +1,56 @@
 package com.ewiida.e_commerceapp.homeapp
 
-import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
-import com.ewiida.e_commerceapp.ProductCategory
 import com.ewiida.e_commerceapp.R
-import com.ewiida.e_commerceapp.homeapp.cartpage.Cart
-import com.ewiida.e_commerceapp.databinding.Activity2Binding
-import com.ewiida.e_commerceapp.homeapp.homepage.Home
-import com.ewiida.e_commerceapp.homeapp.notificationspage.Notifications
+import com.ewiida.e_commerceapp.homeapp.cartpage.CartPage
+import com.ewiida.e_commerceapp.databinding.BottomNavigationBinding
+import com.ewiida.e_commerceapp.homeapp.homepage.HomePage
+import com.ewiida.e_commerceapp.homeapp.notificationspage.NotificationsPage
+import com.ewiida.e_commerceapp.homeapp.profilepage.Profile
 
 class HomeActivity : AppCompatActivity() {
-    lateinit var binding : Activity2Binding
+
+    lateinit var binding : BottomNavigationBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding = Activity2Binding.inflate(layoutInflater)
+        binding = BottomNavigationBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        BottomNavigationBarControler()
+        bottomNavigationBarController()
         hideBars()
-        var itt=intent
-        if(itt.getBooleanExtra("fromAddToCart",false)){
-            var cart=Cart()
-            replaceFragment(cart)
+        val intent = intent
+        if(intent.getBooleanExtra("fromAddToCart",false)){
+            val cartPage=CartPage()
+            replaceFragment(cartPage)
             binding.bottomNavigationView.menu.select(R.id.menuItemCart)
         }else{
-            var home= Home()
-            replaceFragment(home)
+            val homePage= HomePage()
+            replaceFragment(homePage)
         }
 
     }
 
-    private fun BottomNavigationBarControler() {
+    private fun bottomNavigationBarController() {
         binding.bottomNavigationView.onItemSelectedListener={ view,menuItem,it->
             when(menuItem.id){
                 R.id.menuItemHome->{
-                    var f=Home()
+                    val f = HomePage()
                     replaceFragment(f)
                 }
                 R.id.menuItemCart->{
-                    var f= Cart()
+                    val f = CartPage()
                     replaceFragment(f)
                 }
                 R.id.menuItemNotifications->{
-                    var f= Notifications()
+                    val f = NotificationsPage()
                     replaceFragment(f)
                 }
                 R.id.menuItemProfile->{
-                    var f=Profile()
+                    val f = Profile()
                     replaceFragment(f)
                 }
             }
@@ -60,8 +60,8 @@ class HomeActivity : AppCompatActivity() {
 
 
     private fun replaceFragment(f:Fragment){
-        var fm=supportFragmentManager
-        var ft=fm.beginTransaction()
+        val fm = supportFragmentManager
+        val ft = fm.beginTransaction()
         ft.replace(R.id.container,f)
         ft.commit()
     }

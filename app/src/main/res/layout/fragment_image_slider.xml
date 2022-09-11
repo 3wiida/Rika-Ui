@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".imageSliderFragment" >
+    tools:context=".homeapp.homepage.productdetails.ImageSliderFragment" >
 
     <androidx.viewpager.widget.ViewPager
         android:layout_width="0dp"
@@ -19,11 +19,11 @@
     <me.relex.circleindicator.CircleIndicator
         android:id="@+id/indicator"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        app:ci_height="12dp"
-        app:ci_width="12dp"
-        android:elevation="4dp"
-        android:layout_marginBottom="40dp"
+        android:layout_height="@dimen/_40dp"
+        app:ci_height="@dimen/_12dp"
+        app:ci_width="@dimen/_12dp"
+        android:elevation="@dimen/_4dp"
+        android:layout_marginBottom="@dimen/_40dp"
         app:ci_drawable="@drawable/image_slider_indicator"
         app:ci_drawable_unselected="@drawable/image_slider_indecator_unselected"
         app:layout_constraintBottom_toBottomOf="parent"

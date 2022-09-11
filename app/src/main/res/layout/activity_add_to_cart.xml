@@ -3,16 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
-
-    </data>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
-        tools:context=".addToCartActivity">
-
+        tools:context=".homeapp.homepage.productdetails.AddToCartActivity">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline63"
@@ -38,7 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.048661802" />
+                app:layout_constraintGuide_percent="0.04" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline61"
@@ -52,11 +46,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.09" />
+                app:layout_constraintGuide_percent="0.05" />
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragmentContainerView"
-                android:name="com.ewiida.e_commerceapp.imageSliderFragment"
+                android:name="com.ewiida.e_commerceapp.homeapp.homepage.productdetails.ImageSliderFragment"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -66,24 +60,21 @@
 
             <ImageButton
                 android:id="@+id/backBtn"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/_50dp"
+                android:layout_height="@dimen/_50dp"
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
                 android:background="@drawable/circle_btn"
-                android:padding="20dp"
+                android:padding="@dimen/_20dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/back_arrow"
                 app:layout_constraintStart_toStartOf="@+id/guideline60"
                 app:layout_constraintTop_toTopOf="@+id/guideline66" />
 
             <androidx.cardview.widget.CardView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-
-
-                app:cardCornerRadius="500dp"
-
+                android:layout_width="@dimen/_50dp"
+                android:layout_height="@dimen/_50dp"
+                app:cardCornerRadius="@dimen/_500dp"
                 app:layout_constraintEnd_toStartOf="@+id/guideline61"
                 app:layout_constraintTop_toTopOf="@+id/guideline66">
 
@@ -93,26 +84,24 @@
 
                     <ImageButton
                         android:id="@+id/cartNotification"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginEnd="0dp"
-                        android:layout_marginBottom="0dp"
+                        android:layout_width="@dimen/_50dp"
+                        android:layout_height="@dimen/_50dp"
                         android:background="@color/white"
-                        android:padding="20dp"
+                        android:padding="@dimen/_20dp"
                         android:scaleType="center"
                         android:src="@drawable/bag_noti"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent" />
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="15dp"
-                        android:layout_height="15dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginEnd="8dp"
+                        android:layout_width="@dimen/_15dp"
+                        android:layout_height="@dimen/_15dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:layout_marginEnd="@dimen/_8dp"
                         android:background="@drawable/circle_btn"
-                        android:text="3"
+                        android:text="@string/_3"
                         android:textColor="@color/white"
-                        android:textSize="10sp"
+                        android:textSize="@dimen/_10sp"
                         app:layout_constraintEnd_toEndOf="@+id/cartNotification"
                         app:layout_constraintTop_toTopOf="@+id/cartNotification" />
 
@@ -136,8 +125,6 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-
-
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -148,11 +135,10 @@
                     android:id="@+id/cardView2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="57dp"
-                    app:cardCornerRadius="30dp"
-                    app:cardElevation="5dp"
+                    android:layout_marginStart="@dimen/_20dp"
+                    android:layout_marginTop="@dimen/_57dp"
+                    app:cardCornerRadius="@dimen/_30dp"
+                    app:cardElevation="@dimen/_5dp"
                     app:layout_constraintEnd_toStartOf="@+id/guideline69"
                     app:layout_constraintStart_toEndOf="@+id/radioGroup2"
                     app:layout_constraintTop_toTopOf="@+id/guideline67">
@@ -160,7 +146,7 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:padding="10dp">
+                        android:padding="@dimen/_10dp">
 
                         <RadioGroup
                             android:layout_width="wrap_content"
@@ -174,42 +160,42 @@
 
                             <RadioButton
                                 android:id="@+id/radioButton7"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
+                                android:layout_width="@dimen/_30dp"
+                                android:layout_height="@dimen/_30dp"
                                 android:layout_gravity="center"
-                                android:layout_marginEnd="10dp"
+                                android:layout_marginEnd="@dimen/_10dp"
                                 android:background="@drawable/radio_shape"
-                                android:backgroundTint="#D9CCCE"
+                                android:backgroundTint="@color/_D9CCCE"
                                 android:button="@null"
                                 android:foreground="@drawable/radio_check_selector"
-                                android:padding="10dp" />
+                                android:padding="@dimen/_10dp" />
 
                             <RadioButton
                                 android:id="@+id/radioButton6"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:layout_marginEnd="10dp"
+                                android:layout_width="@dimen/_30dp"
+                                android:layout_height="@dimen/_30dp"
+                                android:layout_marginEnd="@dimen/_10dp"
                                 android:background="@drawable/radio_shape"
-                                android:backgroundTint="#4D4A5D"
+                                android:backgroundTint="@color/_4D4A5D"
                                 android:button="@null"
                                 android:foreground="@drawable/radio_check_selector" />
 
                             <RadioButton
                                 android:id="@+id/radioButton4"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:layout_marginEnd="10dp"
+                                android:layout_width="@dimen/_30dp"
+                                android:layout_height="@dimen/_30dp"
+                                android:layout_marginEnd="@dimen/_10dp"
                                 android:background="@drawable/radio_shape"
-                                android:backgroundTint="#222222"
+                                android:backgroundTint="@color/_222"
                                 android:button="@null"
                                 android:foreground="@drawable/radio_check_selector" />
 
                             <RadioButton
                                 android:id="@+id/radioButton5"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
+                                android:layout_width="@dimen/_30dp"
+                                android:layout_height="@dimen/_30dp"
                                 android:background="@drawable/radio_shape"
-                                android:backgroundTint="#EBE8E8"
+                                android:backgroundTint="@color/_EBE8E8"
                                 android:button="@null"
                                 android:foreground="@drawable/radio_check_selector" />
                         </RadioGroup>
@@ -228,7 +214,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.048661802" />
+                    app:layout_constraintGuide_percent="0.04" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guideline67"
@@ -241,11 +227,11 @@
                     android:id="@+id/itemName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="@dimen/_16dp"
                     android:fontFamily="@font/montsemibold"
                     android:text="Herschel Supply Co."
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="@dimen/_18sp"
                     app:layout_constraintStart_toStartOf="@+id/guideline68"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -253,10 +239,11 @@
                     android:id="@+id/textView19"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="@dimen/_16dp"
                     android:fontFamily="@font/montsemibold"
                     android:text="Avaliable in stok"
-                    android:textSize="11sp"
+                    android:textSize="@dimen/_11sp"
+                    android:textColor="@color/black"
                     app:layout_constraintEnd_toStartOf="@+id/guideline69"
                     app:layout_constraintTop_toBottomOf="@+id/minusOne" />
 
@@ -264,10 +251,11 @@
                     android:id="@+id/textView17"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="@dimen/_8dp"
                     android:fontFamily="@font/montreglaur"
                     android:text="(270 Review)"
-                    android:textSize="11sp"
+                    android:textSize="@dimen/_11sp"
+                    android:textColor="@color/black"
                     app:layout_constraintStart_toEndOf="@+id/itemRating"
                     app:layout_constraintTop_toTopOf="@+id/itemRating" />
 
@@ -275,10 +263,11 @@
                     android:id="@+id/itemDes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/_8dp"
                     android:fontFamily="@font/montreglaur"
                     android:text="Daypack Backpack"
-                    android:textSize="11sp"
+                    android:textSize="@dimen/_11sp"
+                    android:textColor="@color/_666"
                     app:layout_constraintStart_toStartOf="@+id/guideline68"
                     app:layout_constraintTop_toBottomOf="@+id/itemName" />
 
@@ -287,20 +276,22 @@
                     style="?android:attr/ratingBarStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginTop="8dp"
-                    android:progressTint="#FFAB07"
+                    android:layout_marginStart="@dimen/_4dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:progressTint="@color/_FFAB07"
                     android:rating="4.5"
                     app:layout_constraintStart_toStartOf="@+id/guideline68"
                     app:layout_constraintTop_toBottomOf="@+id/itemDes" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/minusOne"
-                    android:layout_width="80dp"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_width="@dimen/_80dp"
+                    android:layout_height="@dimen/_35dp"
+                    android:layout_marginTop="@dimen/_16dp"
                     android:background="@drawable/minus_one_cart_item_btn_background"
                     android:text="-    1     +"
+                    android:textSize="@dimen/_14sp"
+                    android:fontFamily="@font/montreglaur"
                     app:layout_constraintEnd_toStartOf="@+id/guideline69"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -308,11 +299,11 @@
                     android:id="@+id/textView20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="@dimen/_24dp"
                     android:fontFamily="@font/montsemibold"
                     android:text="Size"
                     android:textColor="@color/black"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/_16sp"
                     app:layout_constraintStart_toStartOf="@+id/guideline68"
                     app:layout_constraintTop_toTopOf="@+id/guideline67" />
 
@@ -320,7 +311,7 @@
                     android:id="@+id/radioGroup2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="@dimen/_16dp"
                     android:checkedButton="@id/radioButton3"
                     android:orientation="horizontal"
                     app:layout_constraintStart_toStartOf="@+id/guideline68"
@@ -330,27 +321,27 @@
                         android:id="@+id/radioButton3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="10dp"
+                        android:layout_marginEnd="@dimen/_10dp"
                         android:background="@drawable/size_radio_btn_selector"
                         android:button="@null"
                         android:fontFamily="@font/montsemibold"
                         android:gravity="center"
                         android:text="S"
                         android:textColor="@color/myorder_button_text_selector"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/_14sp" />
 
                     <RadioButton
                         android:id="@+id/radioButton2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="10dp"
+                        android:layout_marginEnd="@dimen/_10dp"
                         android:background="@drawable/size_radio_btn_selector"
                         android:button="@null"
                         android:fontFamily="@font/montsemibold"
                         android:gravity="center"
                         android:text="M"
                         android:textColor="@color/myorder_button_text_selector"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/_14sp" />
 
                     <RadioButton
                         android:id="@+id/radioButton"
@@ -360,21 +351,21 @@
                         android:button="@null"
                         android:fontFamily="@font/montsemibold"
                         android:gravity="center"
-                        android:padding="10dp"
+                        android:padding="@dimen/_10dp"
                         android:text="L"
                         android:textColor="@color/myorder_button_text_selector"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/_14sp" />
                 </RadioGroup>
 
                 <TextView
                     android:id="@+id/textView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="@dimen/_24dp"
                     android:fontFamily="@font/montsemibold"
                     android:text="Description"
                     android:textColor="@color/black"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/_16sp"
                     app:layout_constraintStart_toStartOf="@+id/guideline68"
                     app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
 
@@ -382,12 +373,12 @@
                     android:id="@+id/textView21"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:fontFamily="@font/montsemibold"
-                    android:lineHeight="18dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:fontFamily="@font/montreglaur"
+                    android:lineHeight="@dimen/_18dp"
                     android:text="A roomy backpack from the specialists in everyday bags at Herschel Supply Co., featuring resilient canvas and a light-blue patina that feels just right for summer."
-                    android:textSize="11sp"
-
+                    android:textSize="@dimen/_11sp"
+                    android:textColor="@color/_666"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/guideline69"
                     app:layout_constraintHorizontal_bias="1.0"
@@ -403,12 +394,12 @@
         <LinearLayout
             android:id="@+id/linearLayout2"
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="@dimen/_60dp"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginEnd="@dimen/_15dp"
             android:background="@drawable/_10_black_rect"
             android:orientation="horizontal"
-            android:padding="10dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp"
+            android:padding="@dimen/_10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -423,23 +414,25 @@
                 android:background="@null"
                 android:fontFamily="@font/montbold"
                 android:gravity="left |center"
-                android:paddingStart="10dp"
+                android:paddingStart="@dimen/_10dp"
                 android:text="$245.00"
                 android:textColor="@color/white"
                 android:textCursorDrawable="@null"
-                android:textSize="18sp" />
+                android:textSize="@dimen/_18sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/addToCartBtn"
                 android:layout_width="wrap_content"
-                android:layout_height="35dp"
+                android:layout_height="@dimen/_35dp"
                 android:layout_gravity="center"
                 android:background="@drawable/_10_white_rect"
                 android:drawableStart="@drawable/bag_noti"
-                android:drawablePadding="10dp"
-                android:paddingStart="10dp"
-                android:paddingEnd="20dp"
+                android:drawablePadding="@dimen/_10dp"
+                android:paddingStart="@dimen/_10dp"
+                android:paddingEnd="@dimen/_20dp"
                 android:text="Add to cart"
+                android:textSize="@dimen/_16sp"
+                android:fontFamily="@font/montsemibold"
                 android:textColor="@color/black" />
         </LinearLayout>
 
@@ -448,7 +441,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.85858583" />
+            app:layout_constraintGuide_percent="0.85" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/_50_white_rect"
-    android:padding="50dp"
+    android:padding="@dimen/_50dp"
     android:orientation="vertical">
 
     <ImageView
@@ -19,9 +19,9 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montbold"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="@dimen/_24sp"
         android:textColor="@color/black"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="@dimen/_17dp"
         android:text="Successful!" />
 
     <TextView
@@ -29,10 +29,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="@dimen/_17dp"
         android:fontFamily="@font/montreglaur"
-        android:textSize="14sp"
-        android:lineHeight="23dp"
+        android:textSize="@dimen/_14sp"
+        android:lineHeight="@dimen/_23dp"
+        android:textColor="@color/_AAA"
         android:text="You have successfully your\nshopping cart list!" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -40,12 +41,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montbold"
-        android:textSize="16sp"
+        android:textSize="@dimen/_16sp"
         android:background="@drawable/_50_black_rect"
         android:layout_gravity="center"
         android:textColor="@color/white"
-        android:paddingStart="40dp"
-        android:paddingEnd="40dp"
-        android:layout_marginTop="35dp"
+        android:paddingStart="@dimen/_40dp"
+        android:paddingEnd="@dimen/_40dp"
+        android:layout_marginTop="@dimen/_35dp"
         android:text="Track Order" />
 </LinearLayout>

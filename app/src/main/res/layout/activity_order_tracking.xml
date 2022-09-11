@@ -6,7 +6,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".OrderTrackingActivity">
+        tools:context=".homeapp.homepage.trackpage.OrderTrackingActivity">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline70"
@@ -52,8 +52,8 @@
 
         <ImageButton
             android:id="@+id/backButton"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="@dimen/_40dp"
+            android:layout_height="@dimen/_40dp"
             android:background="@drawable/circle_btn"
             android:backgroundTint="@color/black"
             android:src="@drawable/ic_left_arrow"
@@ -68,6 +68,7 @@
             android:iconifiedByDefault="false"
             android:queryBackground="@android:color/transparent"
             android:queryHint="Search..."
+            android:textSize="@dimen/_13sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline73"
             app:layout_constraintStart_toStartOf="@+id/guideline74"
             app:layout_constraintTop_toTopOf="@+id/guideline65">
@@ -78,11 +79,11 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/trackCardConstraint"
             android:layout_width="0dp"
-            android:layout_height="180dp"
-            android:layout_margin="8dp"
+            android:layout_height="@dimen/_180dp"
+            android:layout_margin="@dimen/_8dp"
             android:background="@drawable/card_view_background"
-            android:elevation="3dp"
-            android:padding="20dp"
+            android:elevation="@dimen/_3dp"
+            android:padding="@dimen/_20dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline73"
             app:layout_constraintStart_toStartOf="@+id/guideline74"
             app:layout_constraintTop_toTopOf="@+id/guideline75">
@@ -111,8 +112,8 @@
 
             <ImageView
                 android:id="@+id/trackCardImage"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
                 app:layout_constraintBottom_toBottomOf="@+id/trackCardCompany"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/trackCardNumber"
@@ -123,11 +124,11 @@
                 android:id="@+id/trackCardNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="@dimen/_16dp"
                 android:fontFamily="@font/montbold"
                 android:text="6556 23341 8090"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="@dimen/_14sp"
                 app:layout_constraintBottom_toTopOf="@+id/trackCardCompany"
                 app:layout_constraintStart_toEndOf="@+id/trackCardImage"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -136,11 +137,11 @@
                 android:id="@+id/trackCardCompany"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="@dimen/_16dp"
                 android:fontFamily="@font/montreglaur"
                 android:text="Ena Express"
-                android:textColor="#666"
-                android:textSize="9sp"
+                android:textColor="@color/_666"
+                android:textSize="@dimen/_11sp"
                 app:layout_constraintStart_toEndOf="@+id/trackCardImage"
                 app:layout_constraintTop_toBottomOf="@+id/trackCardNumber" />
 
@@ -151,7 +152,7 @@
                 android:fontFamily="@font/montbold"
                 android:text="Transit"
                 android:textColor="@color/black"
-                android:textSize="11sp"
+                android:textSize="@dimen/_11sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -161,7 +162,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:progress="33"
-                android:progressTint="#000"
+                android:progressTint="@color/black"
                 app:layout_constraintBottom_toTopOf="@+id/guideline78"
                 app:layout_constraintEnd_toStartOf="@+id/progressBarImage4"
                 app:layout_constraintStart_toEndOf="@+id/progressBarImage1"
@@ -169,10 +170,10 @@
 
             <ImageView
                 android:id="@+id/progressBarImage2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="@dimen/_25dp"
+                android:layout_height="@dimen/_25dp"
                 android:background="@drawable/_500_blaci_oval"
-                android:padding="5dp"
+                android:padding="@dimen/_5dp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline78"
                 app:layout_constraintEnd_toStartOf="@+id/guideline76"
                 app:layout_constraintStart_toStartOf="@+id/guideline76"
@@ -217,8 +218,8 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montreglaur"
                 android:text="25 June, 2021"
-                android:textColor="#666"
-                android:textSize="11sp"
+                android:textColor="@color/_666"
+                android:textSize="@dimen/_11sp"
                 app:layout_constraintBottom_toTopOf="@+id/trackCardStartPlace"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -229,7 +230,7 @@
                 android:fontFamily="@font/montsemibold"
                 android:text="Sacramnto"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="@dimen/_14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -239,8 +240,8 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montreglaur"
                 android:text="30 June, 2021"
-                android:textColor="#666"
-                android:textSize="11sp"
+                android:textColor="@color/_666"
+                android:textSize="@dimen/_11sp"
                 app:layout_constraintBottom_toTopOf="@+id/trackCardEndPlace"
                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -251,7 +252,7 @@
                 android:fontFamily="@font/montsemibold"
                 android:text="New York"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="@dimen/_14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -261,11 +262,11 @@
             android:id="@+id/trackingTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="@dimen/_24dp"
             android:fontFamily="@font/montbold"
             android:text="Tracking"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="@dimen/_15sp"
             app:layout_constraintStart_toStartOf="@+id/guideline74"
             app:layout_constraintTop_toBottomOf="@+id/trackCardConstraint" />
 
@@ -273,7 +274,7 @@
             android:id="@+id/trackingRecycler"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="@dimen/_24dp"
             android:overScrollMode="never"
             app:layout_constraintBottom_toTopOf="@+id/guideline72"
             app:layout_constraintEnd_toStartOf="@+id/guideline73"

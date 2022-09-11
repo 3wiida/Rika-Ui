@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -30,10 +29,10 @@
 
         <ImageButton
             android:id="@+id/backBtn"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="@dimen/_40dp"
+            android:layout_height="@dimen/_40dp"
             android:background="@drawable/circle_btn"
-            android:padding="20dp"
+            android:padding="@dimen/_20dp"
             android:scaleType="center"
             android:src="@drawable/back_arrow"
             app:layout_constraintStart_toStartOf="@+id/guideline42"
@@ -41,10 +40,9 @@
 
 
         <androidx.cardview.widget.CardView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:cardCornerRadius="500dp"
-
+            android:layout_width="@dimen/_40dp"
+            android:layout_height="@dimen/_40dp"
+            app:cardCornerRadius="@dimen/_500dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline43"
             app:layout_constraintTop_toTopOf="@+id/guideline41">
 
@@ -63,14 +61,14 @@
                     app:layout_constraintEnd_toEndOf="parent" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_width="@dimen/_15dp"
+                    android:layout_height="@dimen/_15dp"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:layout_marginEnd="@dimen/_5dp"
                     android:background="@drawable/circle_btn"
                     android:text="3"
                     android:textColor="@color/white"
-                    android:textSize="10sp"
+                    android:textSize="@dimen/_10sp"
                     app:layout_constraintEnd_toEndOf="@+id/cartNotification"
                     app:layout_constraintTop_toTopOf="@+id/cartNotification" />
 
@@ -82,7 +80,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:fillViewport="true"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="@dimen/_30dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/guideline43"
             app:layout_constraintStart_toStartOf="@+id/guideline42"
@@ -92,7 +90,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-
                 <TextView
                     android:id="@+id/textView11"
                     android:layout_width="wrap_content"
@@ -100,7 +97,7 @@
                     android:fontFamily="@font/montbold"
                     android:text="My Cart"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="@dimen/_18sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -108,7 +105,7 @@
                     android:id="@+id/cart_items_rv"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="28dp"
+                    android:layout_marginTop="@dimen/_28dp"
                     android:overScrollMode="never"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -118,12 +115,11 @@
                 <LinearLayout
                     android:id="@+id/linearLayout"
                     android:layout_width="0dp"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_height="@dimen/_60dp"
+                    android:layout_marginTop="@dimen/_16dp"
                     android:background="@drawable/promocode_linearlayout"
                     android:orientation="horizontal"
-
-                    android:padding="10dp"
+                    android:padding="@dimen/_10dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cart_items_rv">
@@ -134,11 +130,12 @@
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:background="@null"
-                        android:fontFamily="@font/montsemibold"
+                        android:fontFamily="@font/montreglaur"
                         android:hint="Promo Code"
-                        android:paddingStart="10dp"
+                        android:paddingStart="@dimen/_10dp"
+                        android:textColor="@color/_AAA"
                         android:textCursorDrawable="@null"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/_13sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="wrap_content"
@@ -146,6 +143,8 @@
                         android:layout_gravity="center"
                         android:background="@drawable/apply_btn_background"
                         android:text="Apply"
+                        android:fontFamily="@font/montsemibold"
+                        android:textSize="@dimen/_11sp"
                         android:textColor="@color/white" />
                 </LinearLayout>
 
@@ -153,11 +152,12 @@
                     android:id="@+id/numberOfCartItems"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginTop="38dp"
+                    android:layout_marginStart="@dimen/_4dp"
+                    android:layout_marginTop="@dimen/_38dp"
                     android:fontFamily="@font/montsemibold"
                     android:text="number of items"
-                    android:textSize="14sp"
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/_888"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
@@ -165,14 +165,12 @@
                     android:id="@+id/priceOfAllCartItems"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="36dp"
-
-                    android:layout_marginEnd="4dp"
+                    android:layout_marginTop="@dimen/_36dp"
+                    android:layout_marginEnd="@dimen/_4dp"
                     android:fontFamily="@font/montsemibold"
                     android:text="number of items"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-
+                    android:textSize="@dimen/_20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
@@ -180,12 +178,11 @@
                 <LinearLayout
                     android:id="@+id/linearLayout2"
                     android:layout_width="0dp"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="26dp"
+                    android:layout_height="@dimen/_60dp"
+                    android:layout_marginTop="@dimen/_26dp"
                     android:background="@drawable/_10_black_rect"
-
                     android:orientation="horizontal"
-                    android:padding="10dp"
+                    android:padding="@dimen/_10dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -200,16 +197,16 @@
                         android:background="@null"
                         android:fontFamily="@font/montsemibold"
                         android:gravity="left |center"
-                        android:paddingStart="10dp"
+                        android:paddingStart="@dimen/_10dp"
                         android:text="Proceed to checkout"
                         android:textColor="@color/white"
                         android:textCursorDrawable="@null"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/_16sp" />
 
                     <ImageButton
                         android:id="@+id/addToCartBtn"
-                        android:layout_width="40dp"
-                        android:layout_height="35dp"
+                        android:layout_width="@dimen/_40dp"
+                        android:layout_height="@dimen/_35dp"
                         android:layout_gravity="center"
                         android:background="@drawable/_10_white_rect"
                         android:src="@drawable/back_arrow_black"

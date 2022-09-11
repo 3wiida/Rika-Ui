@@ -7,13 +7,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".homeapp.OngoingActivity">
+        tools:context=".homeapp.profilepage.myorderspage.OngoingActivity">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline45"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="@dimen/_16dp"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.04"
             app:layout_constraintStart_toStartOf="parent" />
@@ -34,13 +34,14 @@
 
         <ImageButton
             android:id="@+id/backButton"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="@dimen/_40dp"
+            android:layout_height="@dimen/_40dp"
             android:background="@drawable/circle_btn"
             android:backgroundTint="@color/black"
             android:src="@drawable/ic_left_arrow"
             app:layout_constraintStart_toStartOf="@+id/guideline45"
             app:layout_constraintTop_toTopOf="@+id/guideline47" />
+
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline48"
             android:layout_width="wrap_content"
@@ -55,7 +56,7 @@
             android:fontFamily="@font/montbold"
             android:text="My Orders"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="@dimen/_18sp"
             app:layout_constraintStart_toStartOf="@+id/guideline45"
             app:layout_constraintTop_toTopOf="@+id/guideline48" />
 
@@ -63,7 +64,7 @@
             android:id="@+id/radioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/_5dp"
             android:checkedButton="@id/ongoingRadio"
             android:orientation="horizontal"
             app:layout_constraintEnd_toStartOf="@+id/guideline46"
@@ -71,27 +72,29 @@
 
             <RadioButton
                 android:id="@+id/ongoingRadio"
-                android:layout_width="90dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/_90dp"
+                android:layout_height="@dimen/_40dp"
                 android:background="@drawable/myorder_button_background_selector"
                 android:button="@color/transparent"
                 android:fontFamily="@font/montbold"
                 android:gravity="center"
-                android:padding="5dp"
+                android:padding="@dimen/_5dp"
                 android:text="Ongoing"
+                android:textSize="@dimen/_11sp"
                 android:textColor="@color/myorder_button_text_selector" />
 
             <RadioButton
                 android:id="@+id/completedRadio"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="8dp"
+                android:layout_width="@dimen/_100dp"
+                android:layout_height="@dimen/_40dp"
+                android:layout_marginStart="@dimen/_8dp"
                 android:background="@drawable/myorder_button_background_selector"
                 android:button="@color/transparent"
                 android:fontFamily="@font/montbold"
                 android:gravity="center"
-                android:padding="5dp"
+                android:padding="@dimen/_5dp"
                 android:text="Completed"
+                android:textSize="@dimen/_11sp"
                 android:textColor="@color/myorder_button_text_selector" />
 
         </RadioGroup>
@@ -100,7 +103,7 @@
             android:id="@+id/myOrdersRecycler"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="@dimen/_24dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline49"
             app:layout_constraintEnd_toStartOf="@+id/guideline46"
             app:layout_constraintStart_toStartOf="@+id/guideline45"

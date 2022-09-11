@@ -10,28 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EcommerceApp">
         <activity
-            android:name=".OrderTrackingActivity"
+            android:name=".homeapp.homepage.trackpage.OrderTrackingActivity"
             android:exported="true" />
         <activity
-            android:name=".OrderDetailsActivity"
+            android:name=".homeapp.cartpage.orderdetails.OrderDetailsActivity"
             android:exported="true" />
         <activity
-            android:name=".CategoriesActivity"
+            android:name=".homeapp.homepage.categoriespages.CategoriesActivity"
             android:exported="false" />
         <activity
-            android:name=".addToCartActivity"
+            android:name=".homeapp.homepage.productdetails.AddToCartActivity"
             android:exported="true" />
         <activity
-            android:name=".homeapp.SettingsActivity"
+            android:name=".homeapp.profilepage.SettingsActivity"
             android:exported="true" />
         <activity
-            android:name=".homeapp.OngoingActivity"
+            android:name=".homeapp.profilepage.myorderspage.OngoingActivity"
             android:exported="false" />
         <activity
             android:name=".loginscreens.LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".onboarding.OnboardingActivity"
+            android:name=".onboarding.OnBoardingActivity"
             android:exported="true" />
         <activity
             android:name=".homeapp.HomeActivity"

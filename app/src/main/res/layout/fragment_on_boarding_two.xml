@@ -34,13 +34,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.52" />
+            app:layout_constraintGuide_percent="0.6" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="0dp"
             android:layout_height="0dp"
-
             app:layout_constraintBottom_toTopOf="@+id/guideline34"
             app:layout_constraintEnd_toStartOf="@+id/guideline23"
             app:layout_constraintStart_toStartOf="@+id/guideline20"
@@ -60,12 +59,12 @@
             android:id="@+id/textView3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/_16dp"
             android:fontFamily="@font/montbold"
-            android:lineHeight="45dp"
-            android:text="Take Advantage\nOf The Offer Shopping"
+            android:lineHeight="@dimen/_45dp"
+            android:text="Take Advantage Of The Offer Shopping"
             android:textColor="@color/black"
-            android:textSize="30sp"
+            android:textSize="@dimen/_30sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline38"
             app:layout_constraintStart_toStartOf="@+id/guideline20"
             app:layout_constraintTop_toTopOf="@+id/guideline34" />
@@ -82,9 +81,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montreglaur"
-            android:lineHeight="23dp"
-            android:textSize="15sp"
-            android:textColor="#666666"
+            android:lineHeight="@dimen/_23dp"
+            android:textSize="@dimen/_15sp"
+            android:textColor="@color/_666"
             android:text="Publish up your selfies to make yourself\nmore beautiful with this app."
             app:layout_constraintBottom_toTopOf="@+id/guideline37"
             app:layout_constraintEnd_toStartOf="@+id/guideline38"

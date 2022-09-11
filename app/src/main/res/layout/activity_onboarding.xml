@@ -1,12 +1,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".onboarding.OnboardingActivity">
+        tools:context=".onboarding.OnBoardingActivity">
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/pager"
@@ -19,8 +19,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0"
             tools:layout_conversion_absoluteHeight="0dp"
-            tools:layout_conversion_absoluteWidth="0dp">
-        </androidx.viewpager2.widget.ViewPager2>
+            tools:layout_conversion_absoluteWidth="0dp" />
 
         <me.relex.circleindicator.CircleIndicator3
             android:id="@+id/indicator"
@@ -28,42 +27,25 @@
             android:layout_height="0dp"
             app:ci_drawable="@drawable/active"
             app:ci_drawable_unselected="@drawable/normal"
-            app:ci_height="12dp"
-            app:ci_width="12dp"
+            app:ci_height="@dimen/_12dp"
+            app:ci_width="@dimen/_12dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline35"
             app:layout_constraintStart_toStartOf="@+id/guideline40"
             app:layout_constraintTop_toTopOf="@+id/guideline33"
             app:layout_constraintVertical_bias="0.5" />
-
-       <!-- <com.google.android.material.tabs.TabLayout
-            android:id="@+id/indicator"
-            android:layout_width="80dp"
-            android:layout_height="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/guideline35"
-            app:layout_constraintStart_toStartOf="@+id/guideline40"
-            app:layout_constraintTop_toTopOf="@+id/guideline33"
-            app:tabGravity="fill"
-            app:tabIndicator="@drawable/test"
-            app:tabIndicatorColor="#000"
-            app:tabIndicatorGravity="stretch"
-            app:tabMode="fixed"
-            android:background="@color/teal_700"
-            app:tabRippleColor="#000"
-            />-->
-        <!-- app:tabIndicatorHeight="0dp" -->
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/floatingActionButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
-            android:foregroundTint="#FFFFFF"
+            android:foregroundTint="@color/white"
             android:src="@drawable/arrow"
-            app:backgroundTint="#000000"
+            app:backgroundTint="@color/black"
             app:layout_constraintBottom_toTopOf="@+id/guideline35"
             app:layout_constraintEnd_toStartOf="@+id/guideline36"
             app:layout_constraintTop_toTopOf="@+id/guideline33"
-            app:tint="#FFF" />
+            app:tint="@color/white" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline36"

@@ -2,21 +2,23 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:overScrollMode="never">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/frameLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".homeapp.Profile" >
+            tools:context=".homeapp.profilepage.Profile" >
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline41"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="@dimen/_16dp"
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.04"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -48,8 +50,8 @@
 
             <ImageButton
                 android:id="@+id/backButton"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/_40dp"
+                android:layout_height="@dimen/_40dp"
                 android:background="@drawable/circle_btn"
                 android:backgroundTint="@color/black"
                 android:src="@drawable/ic_left_arrow"
@@ -70,8 +72,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/card_view_background"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="5dp"
+                app:cardCornerRadius="@dimen/_20dp"
+                app:cardElevation="@dimen/_5dp"
                 app:layout_constraintEnd_toStartOf="@+id/guideline42"
                 app:layout_constraintStart_toStartOf="@+id/guideline41"
                 app:layout_constraintTop_toTopOf="@+id/guideline44">
@@ -79,12 +81,12 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="15dp">
+                    android:padding="@dimen/_15dp">
 
                     <ImageView
                         android:id="@+id/profileImage"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="@dimen/_80dp"
+                        android:layout_height="@dimen/_80dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -94,11 +96,11 @@
                         android:id="@+id/userName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="@dimen/_20dp"
                         android:fontFamily="@font/montbold"
                         android:text="Hasan Mahmud"
                         android:textColor="@color/black"
-                        android:textSize="18sp"
+                        android:textSize="@dimen/_18sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toEndOf="@+id/profileImage"
@@ -108,8 +110,11 @@
                         android:id="@+id/userEmail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="@dimen/_20dp"
+                        android:layout_marginTop="@dimen/_5dp"
+                        android:textSize="@dimen/_13sp"
+                        android:fontFamily="@font/montreglaur"
+                        android:textColor="@color/_AAA"
                         android:text="rikafashionshop@gmail.com"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -122,11 +127,11 @@
                 android:id="@+id/firstGroupRecycler"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:paddingTop="20dp"
-                android:paddingBottom="20dp"
-                android:paddingStart="10dp"
-                android:paddingEnd="10dp"
+                android:layout_marginTop="@dimen/_24dp"
+                android:paddingTop="@dimen/_20dp"
+                android:paddingBottom="@dimen/_20dp"
+                android:paddingStart="@dimen/_10dp"
+                android:paddingEnd="@dimen/_10dp"
                 android:background="@drawable/profile_recycler_background"
                 android:overScrollMode="never"
                 app:layout_constraintEnd_toStartOf="@+id/guideline42"
@@ -137,13 +142,13 @@
                 android:id="@+id/secondGroupRecycler"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="@dimen/_24dp"
                 android:background="@drawable/profile_recycler_background"
                 android:overScrollMode="never"
-                android:paddingStart="10dp"
-                android:paddingTop="20dp"
-                android:paddingEnd="10dp"
-                android:paddingBottom="20dp"
+                android:paddingStart="@dimen/_10dp"
+                android:paddingTop="@dimen/_20dp"
+                android:paddingEnd="@dimen/_10dp"
+                android:paddingBottom="@dimen/_20dp"
                 app:layout_constraintEnd_toStartOf="@+id/guideline42"
                 app:layout_constraintStart_toStartOf="@+id/guideline41"
                 app:layout_constraintTop_toBottomOf="@+id/firstGroupRecycler" />

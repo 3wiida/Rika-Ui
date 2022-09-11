@@ -9,48 +9,47 @@ import android.preference.PreferenceManager
 import android.view.View
 import com.ewiida.e_commerceapp.homeapp.HomeActivity
 import com.ewiida.e_commerceapp.loginscreens.LoginActivity
-import com.ewiida.e_commerceapp.onboarding.OnboardingActivity
+import com.ewiida.e_commerceapp.onboarding.OnBoardingActivity
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var sp: SharedPreferences
+    private lateinit var sp: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        sp= PreferenceManager.getDefaultSharedPreferences(this)
+        sp = PreferenceManager.getDefaultSharedPreferences(this)
         hideBars()
         checkFirstTimeOpened()
     }
 
-    fun hideBars(){
+    private fun hideBars(){
         window.decorView.apply {
             systemUiVisibility= View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
         }
     }
 
-    fun checkFirstTimeOpened() {
+    private fun checkFirstTimeOpened() {
         if (!sp.getBoolean("flag", false)) {
             Handler().postDelayed({
-                var it = Intent(this, OnboardingActivity::class.java)
+                val it = Intent(this, OnBoardingActivity::class.java)
                 startActivity(it)
-                this?.finish()
+                this.finish()
             }, 1500)
         } else {
             if (!sp.getBoolean("flag2", false)) {
                 Handler().postDelayed({
-                    var it = Intent(this, LoginActivity::class.java)
+                    val it = Intent(this, LoginActivity::class.java)
                     startActivity(it)
-                    this?.finish()
+                    this.finish()
                 }, 1500)
             } else {
                 Handler().postDelayed({
-                    var it = Intent(this, HomeActivity::class.java)
+                    val it = Intent(this, HomeActivity::class.java)
                     startActivity(it)
-                    this?.finish()
+                    this.finish()
                 }, 1500)
-
             }
         }
     }

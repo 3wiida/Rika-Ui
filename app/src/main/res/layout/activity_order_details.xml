@@ -6,7 +6,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".OrderDetailsActivity">
+        tools:context=".homeapp.cartpage.orderdetails.OrderDetailsActivity">
 
 
         <androidx.constraintlayout.widget.Guideline
@@ -39,8 +39,8 @@
 
         <ImageButton
             android:id="@+id/backButton"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="@dimen/_40dp"
+            android:layout_height="@dimen/_40dp"
             android:background="@drawable/circle_btn"
             android:backgroundTint="@color/black"
             android:src="@drawable/ic_left_arrow"
@@ -51,11 +51,11 @@
             android:id="@+id/orderDetailsTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="@dimen/_24dp"
             android:fontFamily="@font/montbold"
             android:text="Delivery Address"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="@dimen/_18sp"
             app:layout_constraintStart_toStartOf="@+id/guideline69"
             app:layout_constraintTop_toBottomOf="@+id/backButton" />
 
@@ -63,11 +63,11 @@
             android:id="@+id/addressConstraint"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_marginTop="4dp"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_4dp"
             android:background="@drawable/card_view_background"
-            android:elevation="3dp"
-            android:padding="25dp"
+            android:elevation="@dimen/_3dp"
+            android:padding="@dimen/_25dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline71"
             app:layout_constraintStart_toStartOf="@+id/guideline69"
             app:layout_constraintTop_toBottomOf="@+id/orderDetailsTitle">
@@ -79,7 +79,7 @@
                 android:fontFamily="@font/montsemibold"
                 android:text="Street: "
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="@dimen/_14sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -88,7 +88,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3512 Pearl Street"
-                android:textSize="14sp"
+                android:textSize="@dimen/_14sp"
+                android:fontFamily="@font/montreglaur"
+                android:textColor="@color/_666"
                 app:layout_constraintBottom_toBottomOf="@+id/streetLabel"
                 app:layout_constraintStart_toEndOf="@+id/streetLabel"
                 app:layout_constraintTop_toTopOf="@+id/streetLabel" />
@@ -100,7 +102,7 @@
                 android:fontFamily="@font/montsemibold"
                 android:text="City: "
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="@dimen/_14sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/streetLabel" />
 
@@ -108,9 +110,10 @@
                 android:id="@+id/cityValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montsemibold"
                 android:text="Sacramento"
-                android:textSize="14sp"
+                android:textSize="@dimen/_14sp"
+                android:fontFamily="@font/montreglaur"
+                android:textColor="@color/_666"
                 app:layout_constraintBottom_toBottomOf="@+id/cityLabel"
                 app:layout_constraintStart_toEndOf="@+id/cityLabel"
                 app:layout_constraintTop_toTopOf="@+id/cityLabel" />
@@ -122,7 +125,7 @@
                 android:fontFamily="@font/montsemibold"
                 android:text="State/province/area: "
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="@dimen/_14sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cityLabel" />
 
@@ -131,7 +134,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="California"
-                android:textSize="14sp"
+                android:textSize="@dimen/_14sp"
+                android:fontFamily="@font/montreglaur"
+                android:textColor="@color/_666"
                 app:layout_constraintBottom_toBottomOf="@+id/stateLabel"
                 app:layout_constraintStart_toEndOf="@+id/stateLabel"
                 app:layout_constraintTop_toTopOf="@+id/stateLabel" />
@@ -143,7 +148,7 @@
                 android:fontFamily="@font/montsemibold"
                 android:text="Phone number: "
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="@dimen/_14sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/stateLabel" />
 
@@ -152,7 +157,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="916-299-4041"
-                android:textSize="14sp"
+                android:textSize="@dimen/_14sp"
+                android:fontFamily="@font/montreglaur"
+                android:textColor="@color/_666"
                 app:layout_constraintBottom_toBottomOf="@+id/phoneLabel"
                 app:layout_constraintStart_toEndOf="@+id/phoneLabel"
                 app:layout_constraintTop_toTopOf="@+id/phoneLabel" />
@@ -164,7 +171,7 @@
                 android:fontFamily="@font/montsemibold"
                 android:text="Zip code: "
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="@dimen/_14sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/phoneLabel" />
 
@@ -173,7 +180,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="95814"
-                android:textSize="14sp"
+                android:textSize="@dimen/_14sp"
+                android:fontFamily="@font/montreglaur"
+                android:textColor="@color/_666"
                 app:layout_constraintBottom_toBottomOf="@+id/zipLabel"
                 app:layout_constraintStart_toEndOf="@+id/zipLabel"
                 app:layout_constraintTop_toTopOf="@+id/zipLabel" />
@@ -185,7 +194,7 @@
                 android:fontFamily="@font/montsemibold"
                 android:text="Country calling code: "
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="@dimen/_14sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/zipLabel" />
 
@@ -194,7 +203,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+1"
-                android:textSize="14sp"
+                android:textSize="@dimen/_14sp"
+                android:fontFamily="@font/montreglaur"
+                android:textColor="@color/_666"
                 app:layout_constraintBottom_toBottomOf="@+id/countryCodeLabel"
                 app:layout_constraintStart_toEndOf="@+id/countryCodeLabel"
                 app:layout_constraintTop_toTopOf="@+id/countryCodeLabel" />
@@ -206,7 +217,7 @@
                 android:fontFamily="@font/montsemibold"
                 android:text="Country: "
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="@dimen/_14sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/countryCodeLabel" />
 
@@ -215,7 +226,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="United States"
-                android:textSize="14sp"
+                android:textSize="@dimen/_14sp"
+                android:fontFamily="@font/montreglaur"
+                android:textColor="@color/_666"
                 app:layout_constraintBottom_toBottomOf="@+id/countryLabel"
                 app:layout_constraintStart_toEndOf="@+id/countryLabel"
                 app:layout_constraintTop_toTopOf="@+id/countryLabel" />
@@ -225,8 +238,8 @@
             android:id="@+id/orderDetailsNestedScrollView"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginBottom="@dimen/_8dp"
             android:overScrollMode="never"
             app:layout_constraintBottom_toTopOf="@+id/placeOrderButton"
             app:layout_constraintEnd_toStartOf="@+id/guideline71"
@@ -248,11 +261,11 @@
                     android:id="@+id/productItemsTitle"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="@dimen/_24dp"
                     android:fontFamily="@font/montbold"
                     android:text="Product Item"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textSize="@dimen/_15sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -261,7 +274,7 @@
                     android:id="@+id/orderRecycler"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/_8dp"
                     android:overScrollMode="never"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -271,11 +284,11 @@
                     android:id="@+id/promoCodeTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/_8dp"
                     android:fontFamily="@font/montbold"
                     android:text="Promo Code"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textSize="@dimen/_15sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/orderRecycler" />
 
@@ -283,12 +296,12 @@
                     android:id="@+id/promoCodeConstraint"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginBottom="@dimen/_8dp"
                     android:background="@drawable/card_view_background"
-                    android:elevation="3dp"
-                    android:padding="10dp"
+                    android:elevation="@dimen/_3dp"
+                    android:padding="@dimen/_10dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -296,10 +309,10 @@
 
                     <ImageView
                         android:id="@+id/promoCodeIcon"
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
+                        android:layout_width="@dimen/_35dp"
+                        android:layout_height="@dimen/_35dp"
                         android:background="@drawable/_10_black_rect"
-                        android:padding="10dp"
+                        android:padding="@dimen/_10dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -309,11 +322,11 @@
                         android:id="@+id/textView18"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
+                        android:layout_marginStart="@dimen/_16dp"
                         android:fontFamily="@font/montsemibold"
                         android:text="Add Promo Code"
                         android:textColor="@color/black"
-                        android:textSize="13sp"
+                        android:textSize="@dimen/_13sp"
                         app:layout_constraintBottom_toTopOf="@+id/textView19"
                         app:layout_constraintStart_toEndOf="@+id/promoCodeIcon"
                         app:layout_constraintTop_toTopOf="@+id/promoCodeIcon"
@@ -323,10 +336,11 @@
                         android:id="@+id/textView19"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
+                        android:layout_marginStart="@dimen/_16dp"
                         android:fontFamily="@font/montreglaur"
                         android:text="#rika2021"
-                        android:textSize="9sp"
+                        android:textSize="@dimen/_9sp"
+                        android:textColor="@color/_666"
                         app:layout_constraintBottom_toBottomOf="@+id/promoCodeIcon"
                         app:layout_constraintStart_toEndOf="@+id/promoCodeIcon"
                         app:layout_constraintTop_toBottomOf="@+id/textView18" />
@@ -342,10 +356,11 @@
             android:id="@+id/orderDetailsTotalPriceLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="@dimen/_4dp"
             android:fontFamily="@font/montreglaur"
             android:text="Total Price"
-            android:textSize="9sp"
+            android:textSize="@dimen/_9sp"
+            android:textColor="@color/_AAA"
             app:layout_constraintBottom_toTopOf="@+id/orderDetailsTotalPriceValue"
             app:layout_constraintStart_toStartOf="@+id/guideline69"
             app:layout_constraintTop_toTopOf="@+id/placeOrderButton"
@@ -358,7 +373,7 @@
             android:fontFamily="@font/montbold"
             android:text="$443.00"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="@dimen/_18sp"
             app:layout_constraintBottom_toBottomOf="@+id/placeOrderButton"
             app:layout_constraintStart_toStartOf="@+id/guideline69"
             app:layout_constraintTop_toBottomOf="@+id/orderDetailsTotalPriceLabel" />
@@ -369,14 +384,14 @@
             android:layout_height="wrap_content"
             android:background="@drawable/_50_black_rect"
             android:fontFamily="@font/montsemibold"
-            android:paddingTop="15dp"
-            android:paddingBottom="15dp"
-            android:paddingStart="30dp"
-            android:paddingEnd="30dp"
+            android:paddingTop="@dimen/_15dp"
+            android:paddingBottom="@dimen/_15dp"
+            android:paddingStart="@dimen/_30dp"
+            android:paddingEnd="@dimen/_30dp"
             android:text="place Order"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="@dimen/_16sp"
             app:layout_constraintBottom_toTopOf="@+id/guideline68"
             app:layout_constraintEnd_toStartOf="@+id/guideline71" />
 
