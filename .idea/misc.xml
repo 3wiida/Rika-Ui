@@ -68,12 +68,18 @@
         <entry key="..\:/Corptia/E-Commerce_app/E_app/app/src/main/res/layout/successful_alert_dialog.xml" value="0.36666666666666664" />
         <entry key="..\:/Corptia/E-Commerce_app/E_app/app/src/main/res/layout/top_category_rv_layout.xml" value="0.36666666666666664" />
         <entry key="..\:/Corptia/E-Commerce_app/E_app/app/src/main/res/layout/tracking_item_temp.xml" value="0.29074074074074074" />
+        <entry key="..\:/E_app/app/src/main/res/drawable/vector.xml" value="0.1645" />
         <entry key="..\:/E_app/app/src/main/res/layout/activity_add_to_cart.xml" value="0.4" />
+        <entry key="..\:/E_app/app/src/main/res/layout/activity_login.xml" value="0.22530996152201796" />
+        <entry key="..\:/E_app/app/src/main/res/layout/activity_main.xml" value="0.22530996152201796" />
+        <entry key="..\:/E_app/app/src/main/res/layout/bottom_navigation.xml" value="0.22530996152201796" />
         <entry key="..\:/E_app/app/src/main/res/layout/cart_item_layout.xml" value="0.22245673279864922" />
         <entry key="..\:/E_app/app/src/main/res/layout/fragment_cart.xml" value="0.22245673279864922" />
+        <entry key="..\:/E_app/app/src/main/res/layout/fragment_home.xml" value="0.22245673279864922" />
         <entry key="..\:/E_app/app/src/main/res/layout/fragment_on_boarding_one.xml" value="0.22530996152201796" />
         <entry key="..\:/E_app/app/src/main/res/layout/fragment_on_boarding_three.xml" value="0.4" />
         <entry key="..\:/E_app/app/src/main/res/layout/fragment_on_boarding_two.xml" value="0.22530996152201796" />
+        <entry key="..\:/E_app/app/src/main/res/layout/fragment_profile.xml" value="0.22530996152201796" />
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/_30_white_rect.xml" value="0.1995" />
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/bottom_nav_background.xml" value="0.203" />
         <entry key="..\:/Ecommerceapp/app/src/main/res/drawable/bottom_nav_cart_selector.xml" value="0.203" />

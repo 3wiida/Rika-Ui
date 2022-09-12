@@ -23,7 +23,7 @@ class HomeActivity : AppCompatActivity() {
         bottomNavigationBarController()
         hideBars()
         val intent = intent
-        if(intent.getBooleanExtra("fromAddToCart",false)){
+        if(intent.getBooleanExtra("fromAddToCart",false)||intent.getBooleanExtra("FromProductCategory",false)){
             val cartPage=CartPage()
             replaceFragment(cartPage)
             binding.bottomNavigationView.menu.select(R.id.menuItemCart)
@@ -31,6 +31,8 @@ class HomeActivity : AppCompatActivity() {
             val homePage= HomePage()
             replaceFragment(homePage)
         }
+
+
 
     }
 

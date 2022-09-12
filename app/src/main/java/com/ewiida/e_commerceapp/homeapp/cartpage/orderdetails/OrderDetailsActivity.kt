@@ -23,7 +23,7 @@ class OrderDetailsActivity : AppCompatActivity() {
             OrderDetailsItem("Roller Rabbit", "Vado Odelle Dress", "$198.00", R.drawable.ongoing1),
             OrderDetailsItem("Axel Arigato", "Clean 90 Triole Sneakers", "$245.00", R.drawable.ongoing2),
             OrderDetailsItem("Herschel Supply Co.", "Daypack Backpack", "$40.00", R.drawable.ongoing3),
-            OrderDetailsItem("On Ear Headphone", "Beats Solo3 Wireless", "$50.00", R.drawable.completed2)
+            OrderDetailsItem("On Ear Headphone", "Beats Solo3 Wireless", "$50.00", R.drawable.head_sets)
         )
 
         val adapter = OrderDetailsAdapter(list)
