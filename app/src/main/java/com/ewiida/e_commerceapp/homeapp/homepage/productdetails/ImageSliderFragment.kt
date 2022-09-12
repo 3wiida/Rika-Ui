@@ -22,7 +22,7 @@ class ImageSliderFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        imageList.add(R.drawable.ongoing3)
+        imageList.add(R.raw.ongoing3)
         imageList.add(R.drawable.manimage)
         imageList.add(R.drawable.completed2)
         viewPager=view.findViewById(R.id.viewPager)
