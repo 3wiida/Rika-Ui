@@ -3,6 +3,7 @@ package com.ewiida.e_commerceapp.onboarding
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
@@ -19,6 +20,8 @@ class OnBoardingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         view = ActivityOnboardingBinding.inflate(layoutInflater)
         setContentView(view.root)
+
+        hideBars()
 
         val adapter = ViewPagerAdapter(fragmentList, supportFragmentManager, lifecycle)
         view.pager.adapter = adapter
@@ -58,5 +61,9 @@ class OnBoardingActivity : AppCompatActivity() {
 
     }
 
-
+    private fun hideBars(){
+        window.decorView.apply {
+            systemUiVisibility= View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+        }
+    }
 }

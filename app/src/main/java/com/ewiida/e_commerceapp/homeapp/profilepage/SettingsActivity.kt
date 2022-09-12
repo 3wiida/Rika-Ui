@@ -6,6 +6,7 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.preference.PreferenceManager
+import android.view.View
 import com.ewiida.e_commerceapp.databinding.ActivitySettingsBinding
 import com.ewiida.e_commerceapp.loginscreens.LoginActivity
 
@@ -53,7 +54,14 @@ class SettingsActivity : AppCompatActivity() {
                 binding.notificationsStateText.text = "off"
             }
         }
+
+        hideBars()
     }
 
+    private fun hideBars(){
+        window.decorView.apply {
+            systemUiVisibility= View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+        }
+    }
 
 }
