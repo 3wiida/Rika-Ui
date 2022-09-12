@@ -7,8 +7,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.FrameLayout
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.FragmentContainerView
+import androidx.fragment.app.replace
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ewiida.e_commerceapp.homeapp.homepage.categoriespages.CategoriesActivity
@@ -17,6 +20,7 @@ import com.ewiida.e_commerceapp.R
 import com.ewiida.e_commerceapp.homeapp.homepage.productdetails.AddToCartActivity
 import com.ewiida.e_commerceapp.databinding.FragmentHomeBinding
 import com.ewiida.e_commerceapp.homeapp.homepage.categoriespages.CategoryRvAdapter
+import com.ewiida.e_commerceapp.homeapp.profilepage.Profile
 
 class HomePage : Fragment() {
 
@@ -32,6 +36,23 @@ class HomePage : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         chipRecyclerViewHandler()
         itemsRecyclerViewHandler()
+
+        binding.avatarBtn.setOnClickListener {
+            var fm=activity?.supportFragmentManager
+            var ft=fm?.beginTransaction()
+            var profile=Profile()
+            ft?.replace(R.id.container,profile)
+            ft?.commit()
+            var bottomNav=activity?.findViewById<github.com.st235.lib_expandablebottombar.ExpandableBottomBar>(R.id.bottomNavigationView)
+            bottomNav?.menu?.select(R.id.menuItemProfile)
+        }
+
+        binding.viewall.setOnClickListener {
+            var itt=Intent(activity,CategoriesActivity::class.java)
+            itt.putExtra("cateName",binding.catename.text.toString())
+            itt.putExtra("FromViewAll",true)
+            startActivity(itt)
+        }
     }
 
 

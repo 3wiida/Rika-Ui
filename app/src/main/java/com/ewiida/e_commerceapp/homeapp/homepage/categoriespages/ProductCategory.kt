@@ -23,7 +23,14 @@ class ProductCategory : Fragment() {
         binding = DataBindingUtil.inflate(inflater,
             R.layout.fragment_product_category, container, false)
         bundle=arguments
-        binding.categoryName.text=bundle?.getString("categoryName")
+        if(bundle!!.getBoolean("flag")){
+            var s=bundle?.getString("cateName")
+            s=s?.slice(3 until s.length)
+            binding.categoryName.text=s
+        }else{
+            binding.categoryName.text=bundle?.getString("categoryName")
+        }
+
 
         binding.backButton.setOnClickListener {
             val fm = activity?.supportFragmentManager

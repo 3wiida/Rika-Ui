@@ -35,5 +35,11 @@ class AddToCartActivity : AppCompatActivity(), Serializable {
 
         }
 
+        binding.cartNotification.setOnClickListener {
+            var itt=Intent(this,HomeActivity::class.java)
+            itt.putExtra("FromProductCategory",true)
+            startActivity(itt)
+        }
+
     }
 }

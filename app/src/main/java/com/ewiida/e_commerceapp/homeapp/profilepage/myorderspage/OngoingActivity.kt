@@ -53,7 +53,7 @@ class OngoingActivity : AppCompatActivity() {
             else if(ID == R.id.completedRadio){
                 list.clear()
                 list.add(Order(R.drawable.completed1, "Soludos", "Ibiza Classic Lace Sneakers", "5", "45", "$120.00"))
-                list.add(Order(R.drawable.completed2, "On Ear Headphone", "Beats Solo3 Wireless Kulak", "8", "XL", "$50.00"))
+                list.add(Order(R.drawable.head_sets, "On Ear Headphone", "Beats Solo3 Wireless Kulak", "8", "XL", "$50.00"))
                 adapter = MyOrdersAdapter(list)
                 binding.myOrdersRecycler.adapter = adapter
 

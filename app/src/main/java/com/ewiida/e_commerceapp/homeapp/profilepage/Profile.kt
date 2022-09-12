@@ -72,6 +72,11 @@ class Profile : Fragment() {
             bnb?.menu?.select(R.id.menuItemHome)
         }
 
+        binding.settingsButton.setOnClickListener {
+            var itt=Intent(activity,SettingsActivity::class.java)
+            startActivity(itt)
+        }
+
         binding.secondGroupRecycler.layoutManager = layoutManager2
         binding.secondGroupRecycler.adapter = adapter2
         binding.secondGroupRecycler.hasFixedSize()

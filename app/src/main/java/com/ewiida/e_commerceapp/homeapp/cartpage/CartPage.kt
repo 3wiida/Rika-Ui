@@ -73,6 +73,20 @@ class CartPage : Fragment() {
 
         cartItemAdapter.onRemoveListener={
             cartItemAdapter.removeItem(it)
+
+            //reduce price when removing item with minus one btn
+           var totalPrice= binding.priceOfAllCartItems.text.toString()
+            totalPrice=totalPrice.slice(0 until totalPrice.length-2)
+            var t=totalPrice.toString().toInt()
+            t-=it.price
+            binding.priceOfAllCartItems.text="${t.toString()} $"
+
+            //reduce number of items when removing items with minus one btn
+            //noi = number of items
+            var noi=binding.numberOfCartItems.text.toString()
+            var n=noi[7]
+            n-=1
+            binding.numberOfCartItems.text="Total ($n item):"
         }
         binding.cartItemsRv.layoutManager=LinearLayoutManager(activity)
         var itemsPrice=0
