@@ -17,7 +17,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_car_icon" />
+        app:srcCompat="@drawable/ic_car_icon"
+        android:contentDescription="@string/order_status_icon" />
 
     <TextView
         android:id="@+id/trackingItemNumber"
@@ -25,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_16dp"
         android:fontFamily="@font/montbold"
-        android:text="US 2343445668"
+        android:text="@string/us_2343445668"
         android:textColor="@color/black"
         android:textSize="@dimen/_14sp"
         app:layout_constraintBottom_toTopOf="@+id/trackingItemAddress"
@@ -39,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_16dp"
         android:fontFamily="@font/montreglaur"
-        android:text="Washington - Georgia"
+        android:text="@string/washington_georgia"
         android:textColor="@color/_666"
         android:textSize="@dimen/_11sp"
         app:layout_constraintBottom_toBottomOf="@+id/trackingItemImage"
@@ -51,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montsemibold"
-        android:text="Delivered"
+        android:text="@string/delivered"
         android:textColor="@color/_AAA"
         android:textSize="@dimen/_13sp"
         app:layout_constraintBottom_toBottomOf="parent"

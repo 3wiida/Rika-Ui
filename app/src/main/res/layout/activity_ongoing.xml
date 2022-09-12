@@ -40,7 +40,8 @@
             android:backgroundTint="@color/black"
             android:src="@drawable/ic_left_arrow"
             app:layout_constraintStart_toStartOf="@+id/guideline45"
-            app:layout_constraintTop_toTopOf="@+id/guideline47" />
+            app:layout_constraintTop_toTopOf="@+id/guideline47"
+            android:contentDescription="@string/back_button_image" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline48"
@@ -54,7 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montbold"
-            android:text="My Orders"
+            android:text="@string/my_orders"
             android:textColor="@color/black"
             android:textSize="@dimen/_18sp"
             app:layout_constraintStart_toStartOf="@+id/guideline45"
@@ -79,7 +80,7 @@
                 android:fontFamily="@font/montbold"
                 android:gravity="center"
                 android:padding="@dimen/_5dp"
-                android:text="Ongoing"
+                android:text="@string/ongoing"
                 android:textSize="@dimen/_11sp"
                 android:textColor="@color/myorder_button_text_selector" />
 
@@ -93,7 +94,7 @@
                 android:fontFamily="@font/montbold"
                 android:gravity="center"
                 android:padding="@dimen/_5dp"
-                android:text="Completed"
+                android:text="@string/completed"
                 android:textSize="@dimen/_11sp"
                 android:textColor="@color/myorder_button_text_selector" />
 

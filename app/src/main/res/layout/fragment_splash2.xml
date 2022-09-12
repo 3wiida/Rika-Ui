@@ -78,7 +78,7 @@
             android:id="@+id/goToSignupBtn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/singup_btn_background"
+            android:background="@drawable/signup_btn_background"
             android:fontFamily="@font/montbold"
             android:text="@string/signupButtonText"
             android:textSize="@dimen/_16sp"
@@ -98,7 +98,8 @@
             app:layout_constraintHorizontal_bias="0.487"
             app:layout_constraintStart_toStartOf="@+id/guideline8"
             app:layout_constraintTop_toTopOf="@+id/guideline6"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.0"
+            android:contentDescription="@string/app_logo" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

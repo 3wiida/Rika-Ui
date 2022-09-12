@@ -11,7 +11,8 @@
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/successful_icon" />
+        app:srcCompat="@drawable/successful_icon"
+        android:contentDescription="@string/prompt_icon" />
 
     <TextView
         android:id="@+id/textView12"
@@ -22,7 +23,7 @@
         android:textSize="@dimen/_24sp"
         android:textColor="@color/black"
         android:layout_marginTop="@dimen/_17dp"
-        android:text="Successful!" />
+        android:text="@string/successful" />
 
     <TextView
         android:id="@+id/textView13"
@@ -34,7 +35,7 @@
         android:textSize="@dimen/_14sp"
         android:lineHeight="@dimen/_23dp"
         android:textColor="@color/_AAA"
-        android:text="You have successfully your\nshopping cart list!" />
+        android:text="@string/you_have_successfully_your_shopping_cart_list" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/trackOrder"
@@ -48,5 +49,5 @@
         android:paddingStart="@dimen/_40dp"
         android:paddingEnd="@dimen/_40dp"
         android:layout_marginTop="@dimen/_35dp"
-        android:text="Track Order" />
+        android:text="@string/track_order" />
 </LinearLayout>

@@ -16,7 +16,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/categorie_new_arrivals" />
+        app:srcCompat="@drawable/categorie_new_arrivals"
+        android:contentDescription="@string/category_item_background" />
 
     <TextView
         android:id="@+id/categoryName"
@@ -25,7 +26,7 @@
         android:layout_marginStart="@dimen/_16dp"
         android:layout_marginEnd="@dimen/_16dp"
         android:fontFamily="@font/montbold"
-        android:text="New Arrivals"
+        android:text="@string/new_arrivals"
         android:textColor="@color/black"
         android:textSize="@dimen/_16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,7 +41,7 @@
         android:layout_marginStart="@dimen/_16dp"
         android:layout_marginEnd="@dimen/_16dp"
         android:fontFamily="@font/montsemibold"
-        android:text="208 Products"
+        android:text="@string/_208_products"
         android:textColor="@color/black"
         android:textSize="@dimen/_11sp"
         app:layout_constraintEnd_toEndOf="parent"

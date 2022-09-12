@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -36,7 +37,8 @@
             android:scaleType="center"
             android:src="@drawable/back_arrow"
             app:layout_constraintStart_toStartOf="@+id/guideline42"
-            app:layout_constraintTop_toTopOf="@+id/guideline41" />
+            app:layout_constraintTop_toTopOf="@+id/guideline41"
+            android:contentDescription="@string/back_button_image" />
 
 
         <androidx.cardview.widget.CardView
@@ -58,7 +60,8 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/bag_noti"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:contentDescription="@string/cart_image" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="@dimen/_15dp"
@@ -66,7 +69,7 @@
                     android:layout_marginTop="@dimen/_5dp"
                     android:layout_marginEnd="@dimen/_5dp"
                     android:background="@drawable/circle_btn"
-                    android:text="3"
+                    android:text="@string/_3"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_10sp"
                     app:layout_constraintEnd_toEndOf="@+id/cartNotification"
@@ -95,7 +98,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montbold"
-                    android:text="My Cart"
+                    android:text="@string/my_cart"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_18sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -125,24 +128,26 @@
                     app:layout_constraintTop_toBottomOf="@+id/cart_items_rv">
 
                     <EditText
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:background="@null"
                         android:fontFamily="@font/montreglaur"
-                        android:hint="Promo Code"
+                        android:hint="@string/promo_code"
+                        android:inputType="text"
                         android:paddingStart="@dimen/_10dp"
                         android:textColor="@color/_AAA"
                         android:textCursorDrawable="@null"
-                        android:textSize="@dimen/_13sp" />
+                        android:textSize="@dimen/_13sp"
+                        tools:ignore="RtlSymmetry" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:background="@drawable/apply_btn_background"
-                        android:text="Apply"
+                        android:text="@string/apply"
                         android:fontFamily="@font/montsemibold"
                         android:textSize="@dimen/_11sp"
                         android:textColor="@color/white" />
@@ -155,7 +160,7 @@
                     android:layout_marginStart="@dimen/_4dp"
                     android:layout_marginTop="@dimen/_38dp"
                     android:fontFamily="@font/montsemibold"
-                    android:text="number of items"
+                    android:text="@string/number_of_items"
                     android:textSize="@dimen/_14sp"
                     android:textColor="@color/_888"
                     app:layout_constraintStart_toStartOf="parent"
@@ -168,7 +173,7 @@
                     android:layout_marginTop="@dimen/_36dp"
                     android:layout_marginEnd="@dimen/_4dp"
                     android:fontFamily="@font/montsemibold"
-                    android:text="number of items"
+                    android:text="@string/number_of_items"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_20sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -198,10 +203,11 @@
                         android:fontFamily="@font/montsemibold"
                         android:gravity="left |center"
                         android:paddingStart="@dimen/_10dp"
-                        android:text="Proceed to checkout"
+                        android:text="@string/proceed_to_checkout"
                         android:textColor="@color/white"
                         android:textCursorDrawable="@null"
-                        android:textSize="@dimen/_16sp" />
+                        android:textSize="@dimen/_16sp"
+                        tools:ignore="RtlSymmetry" />
 
                     <ImageButton
                         android:id="@+id/addToCartBtn"
@@ -210,7 +216,8 @@
                         android:layout_gravity="center"
                         android:background="@drawable/_10_white_rect"
                         android:src="@drawable/back_arrow_black"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/white"
+                        android:contentDescription="@string/proceed_to_checkout_button_image" />
                 </LinearLayout>
 
 

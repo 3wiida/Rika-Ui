@@ -46,7 +46,8 @@
                 app:layout_constraintBottom_toTopOf="@+id/guideline44"
                 app:layout_constraintEnd_toStartOf="@+id/guideline42"
                 app:layout_constraintTop_toTopOf="@+id/guideline43"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.0"
+                android:contentDescription="@string/settings_icon" />
 
             <ImageButton
                 android:id="@+id/backButton"
@@ -58,7 +59,8 @@
                 app:layout_constraintBottom_toTopOf="@+id/guideline44"
                 app:layout_constraintStart_toStartOf="@+id/guideline41"
                 app:layout_constraintTop_toTopOf="@+id/guideline43"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.0"
+                android:contentDescription="@string/back_button_image" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline44"
@@ -90,7 +92,8 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/profile_image" />
+                        app:srcCompat="@drawable/profile_image"
+                        android:contentDescription="@string/user_image" />
 
                     <TextView
                         android:id="@+id/userName"
@@ -98,7 +101,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_20dp"
                         android:fontFamily="@font/montbold"
-                        android:text="Hasan Mahmud"
+                        android:text="@string/hasan_mahmud"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_18sp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -115,7 +118,7 @@
                         android:textSize="@dimen/_13sp"
                         android:fontFamily="@font/montreglaur"
                         android:textColor="@color/_AAA"
-                        android:text="rikafashionshop@gmail.com"
+                        android:text="@string/rikafashionshop_gmail_com"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toEndOf="@+id/profileImage"

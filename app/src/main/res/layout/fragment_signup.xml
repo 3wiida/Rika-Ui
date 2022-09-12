@@ -73,7 +73,7 @@
             app:layout_constraintGuide_percent="0.95" />
 
         <ImageView
-            android:id="@+id/signuoLogo"
+            android:id="@+id/signupLogo"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/logoblack"
@@ -82,7 +82,8 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline21"
             app:layout_constraintTop_toTopOf="@+id/guideline25"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.0"
+            android:contentDescription="@string/app_logo" />
 
         <TextView
             android:id="@+id/signupTitle"
@@ -141,7 +142,7 @@
                     android:ems="10"
                     android:textSize="@dimen/_14sp"
                     android:fontFamily="@font/montreglaur"
-                    android:hint="Enter Your User name"
+                    android:hint="@string/enter_your_user_name"
                     android:inputType="textPersonName"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -168,7 +169,7 @@
                     android:ems="10"
                     android:textSize="@dimen/_14sp"
                     android:fontFamily="@font/montreglaur"
-                    android:hint="Enter Your Email"
+                    android:hint="@string/enter_your_e_mail"
                     android:inputType="textPersonName"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -198,7 +199,8 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/passwordInputLabel"
                     app:passwordToggleEnabled="true"
-                    app:passwordToggleTint="@color/black">
+                    app:passwordToggleTint="@color/black"
+                    tools:ignore="RtlSymmetry">
 
                     <EditText
                         android:id="@+id/passwordInput"
@@ -208,7 +210,7 @@
                         android:drawableTint="@color/black"
                         android:ems="10"
                         android:fontFamily="@font/montreglaur"
-                        android:hint="Enter password"
+                        android:hint="@string/enter_password"
                         android:textSize="@dimen/_14sp"
                         android:inputType="textPassword"
                         android:textAlignment="viewStart" />
@@ -236,7 +238,8 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/passwordreInputLabel"
                     app:passwordToggleEnabled="true"
-                    app:passwordToggleTint="@color/black">
+                    app:passwordToggleTint="@color/black"
+                    tools:ignore="RtlSymmetry">
 
                     <EditText
                         android:id="@+id/passwordreInput"
@@ -247,7 +250,7 @@
                         android:drawableTint="@color/black"
                         android:ems="10"
                         android:fontFamily="@font/montreglaur"
-                        android:hint="Re-write Your Password"
+                        android:hint="@string/re_write_your_password"
                         android:textSize="@dimen/_14sp"
                         android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -260,8 +263,7 @@
                     android:layout_marginBottom="@dimen/_4dp"
                     android:buttonTint="#000"
                     android:padding="@dimen/_2dp"
-                    android:text="By creating an account you have to agree
-with our them &amp; condication."
+                    android:text="@string/signup_check_button"
                     android:fontFamily="@font/montreglaur"
                     android:textSize="@dimen/_14sp"
                     android:textColor="@color/_AAA"
@@ -282,7 +284,7 @@ with our them &amp; condication."
             android:layout_height="wrap_content"
             android:background="@drawable/signup_btn"
             android:fontFamily="@font/montbold"
-            android:text="Sign Up"
+            android:text="@string/sign_up"
             android:textSize="@dimen/_16sp"
             android:textAllCaps="false"
             android:textColor="@color/white"

@@ -6,7 +6,6 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         tools:context=".addToCartActivity">
 
 
@@ -71,7 +70,8 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/back_arrow"
                 app:layout_constraintStart_toStartOf="@+id/guideline60"
-                app:layout_constraintTop_toTopOf="@+id/guideline66" />
+                app:layout_constraintTop_toTopOf="@+id/guideline66"
+                android:contentDescription="@string/back_button_image" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="50dp"
@@ -98,7 +98,8 @@
                         android:scaleType="center"
                         android:src="@drawable/bag_noti"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent" />
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:contentDescription="@string/cart_image" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="15dp"
@@ -106,9 +107,9 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
                         android:background="@drawable/circle_btn"
-                        android:text="3"
+                        android:text="@string/_3"
                         android:textColor="@color/white"
-                        android:textSize="10sp"
+                        android:textSize="@dimen/_10sp"
                         app:layout_constraintEnd_toEndOf="@+id/cartNotification"
                         app:layout_constraintTop_toTopOf="@+id/cartNotification" />
 
@@ -239,7 +240,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/montsemibold"
-                    android:text="Herschel Supply Co."
+                    android:text="@string/herschelSupplyCo"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="@+id/guideline68"
@@ -251,7 +252,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/montsemibold"
-                    android:text="Avaliable in stok"
+                    android:text="@string/availableInStock"
                     android:textSize="11sp"
                     app:layout_constraintEnd_toStartOf="@+id/guideline69"
                     app:layout_constraintTop_toBottomOf="@+id/minusOne" />
@@ -262,7 +263,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:fontFamily="@font/montreglaur"
-                    android:text="(270 Review)"
+                    android:text="@string/reviews"
                     android:textSize="11sp"
                     app:layout_constraintStart_toEndOf="@+id/itemRating"
                     app:layout_constraintTop_toTopOf="@+id/itemRating" />
@@ -273,7 +274,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/montreglaur"
-                    android:text="Daypack Backpack"
+                    android:text="@string/daypackBackpack"
                     android:textSize="11sp"
                     app:layout_constraintStart_toStartOf="@+id/guideline68"
                     app:layout_constraintTop_toBottomOf="@+id/itemName" />
@@ -306,7 +307,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
                     android:fontFamily="@font/montsemibold"
-                    android:text="Size"
+                    android:text="@string/size"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="@+id/guideline68"
@@ -331,7 +332,7 @@
                         android:button="@null"
                         android:fontFamily="@font/montsemibold"
                         android:gravity="center"
-                        android:text="S"
+                        android:text="@string/s"
                         android:textColor="@color/myorder_button_text_selector"
                         android:textSize="14sp" />
 
@@ -344,7 +345,7 @@
                         android:button="@null"
                         android:fontFamily="@font/montsemibold"
                         android:gravity="center"
-                        android:text="M"
+                        android:text="@string/m"
                         android:textColor="@color/myorder_button_text_selector"
                         android:textSize="14sp" />
 
@@ -357,7 +358,7 @@
                         android:fontFamily="@font/montsemibold"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="L"
+                        android:text="@string/l"
                         android:textColor="@color/myorder_button_text_selector"
                         android:textSize="14sp" />
                 </RadioGroup>
@@ -368,7 +369,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
                     android:fontFamily="@font/montsemibold"
-                    android:text="Description"
+                    android:text="@string/description"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="@+id/guideline68"
@@ -380,9 +381,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/montsemibold"
-                    android:lineHeight="18dp"
+                    android:lineHeight="@dimen/_18dp"
                     android:layout_marginBottom="10dp"
-                    android:text="A roomy backpack from the specialists in everyday bags at Herschel Supply Co., featuring resilient canvas and a light-blue patina that feels just right for summer."
+                    android:text="@string/a_roomy_backpack"
                     android:textSize="11sp"
 
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -414,7 +415,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/proceedToCheckoutBtn"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
@@ -437,7 +438,7 @@
                 android:drawablePadding="10dp"
                 android:paddingStart="10dp"
                 android:paddingEnd="20dp"
-                android:text="Add to cart"
+                android:text="@string/add_to_cart"
                 android:textColor="@color/black" />
         </LinearLayout>
 

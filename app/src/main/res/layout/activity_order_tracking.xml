@@ -58,7 +58,8 @@
             android:backgroundTint="@color/black"
             android:src="@drawable/ic_left_arrow"
             app:layout_constraintStart_toStartOf="@+id/guideline74"
-            app:layout_constraintTop_toTopOf="@+id/guideline70" />
+            app:layout_constraintTop_toTopOf="@+id/guideline70"
+            android:contentDescription="@string/back_button_image" />
 
         <SearchView
             android:id="@+id/searchView"
@@ -118,7 +119,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/trackCardNumber"
                 app:layout_constraintVertical_bias="0.26"
-                app:srcCompat="@drawable/ic_tracking_card_icon" />
+                app:srcCompat="@drawable/ic_tracking_card_icon"
+                android:contentDescription="@string/tracking_icon" />
 
             <TextView
                 android:id="@+id/trackCardNumber"
@@ -126,7 +128,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_16dp"
                 android:fontFamily="@font/montbold"
-                android:text="6556 23341 8090"
+                android:text="@string/_6556_23341_8090"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_14sp"
                 app:layout_constraintBottom_toTopOf="@+id/trackCardCompany"
@@ -139,7 +141,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_16dp"
                 android:fontFamily="@font/montreglaur"
-                android:text="Ena Express"
+                android:text="@string/ena_express"
                 android:textColor="@color/_666"
                 android:textSize="@dimen/_11sp"
                 app:layout_constraintStart_toEndOf="@+id/trackCardImage"
@@ -150,7 +152,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montbold"
-                android:text="Transit"
+                android:text="@string/transit"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_11sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -179,7 +181,8 @@
                 app:layout_constraintStart_toStartOf="@+id/guideline76"
                 app:layout_constraintTop_toTopOf="@+id/guideline78"
                 app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/ic_plane_icon" />
+                app:srcCompat="@drawable/ic_plane_icon"
+                android:contentDescription="@string/current_order_state_icon" />
 
             <ImageView
                 android:id="@+id/progressBarImage1"
@@ -189,7 +192,8 @@
                 app:layout_constraintBottom_toTopOf="@+id/guideline78"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline78"
-                app:srcCompat="@drawable/ic_tracking_black_circle" />
+                app:srcCompat="@drawable/ic_tracking_black_circle"
+                android:contentDescription="@string/finished_state_icon" />
 
             <ImageView
                 android:id="@+id/progressBarImage3"
@@ -200,7 +204,8 @@
                 app:layout_constraintEnd_toStartOf="@+id/guideline77"
                 app:layout_constraintStart_toStartOf="@+id/guideline77"
                 app:layout_constraintTop_toTopOf="@+id/guideline78"
-                app:srcCompat="@drawable/ic_tracking_gray_circle" />
+                app:srcCompat="@drawable/ic_tracking_gray_circle"
+                android:contentDescription="@string/not_finished_state" />
 
             <ImageView
                 android:id="@+id/progressBarImage4"
@@ -210,14 +215,15 @@
                 app:layout_constraintBottom_toTopOf="@+id/guideline78"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline78"
-                app:srcCompat="@drawable/ic_tracking_gray_circle" />
+                app:srcCompat="@drawable/ic_tracking_gray_circle"
+                android:contentDescription="@string/not_finished_state" />
 
             <TextView
                 android:id="@+id/trackCardStartDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montreglaur"
-                android:text="25 June, 2021"
+                android:text="@string/_25_june_2021"
                 android:textColor="@color/_666"
                 android:textSize="@dimen/_11sp"
                 app:layout_constraintBottom_toTopOf="@+id/trackCardStartPlace"
@@ -228,7 +234,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montsemibold"
-                android:text="Sacramnto"
+                android:text="@string/sacramento"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -239,7 +245,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montreglaur"
-                android:text="30 June, 2021"
+                android:text="@string/_30_june_2021"
                 android:textColor="@color/_666"
                 android:textSize="@dimen/_11sp"
                 app:layout_constraintBottom_toTopOf="@+id/trackCardEndPlace"
@@ -250,7 +256,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montsemibold"
-                android:text="New York"
+                android:text="@string/new_york"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -264,7 +270,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_24dp"
             android:fontFamily="@font/montbold"
-            android:text="Tracking"
+            android:text="@string/tracking"
             android:textColor="@color/black"
             android:textSize="@dimen/_15sp"
             app:layout_constraintStart_toStartOf="@+id/guideline74"

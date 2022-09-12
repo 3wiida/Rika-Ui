@@ -18,7 +18,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cotchie" />
+        app:srcCompat="@drawable/cotchie"
+        android:contentDescription="@string/order_image" />
 
     <TextView
         android:id="@+id/orderDetailsItemName"
@@ -26,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_16dp"
         android:fontFamily="@font/montsemibold"
-        android:text="TextView"
+        android:text="@string/textview"
         android:textColor="@color/black"
         android:textSize="@dimen/_13sp"
         app:layout_constraintBottom_toTopOf="@+id/orderDetailsItemDesc"
@@ -40,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_16dp"
         android:fontFamily="@font/montreglaur"
-        android:text="TextView"
+        android:text="@string/textview"
         android:textSize="@dimen/_9sp"
         android:textColor="@color/_666"
         app:layout_constraintBottom_toTopOf="@+id/orderDetailsItemPrice"
@@ -53,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_16dp"
         android:fontFamily="@font/montbold"
-        android:text="TextView"
+        android:text="@string/textview"
         android:textColor="@color/black"
         android:textSize="@dimen/_13sp"
         app:layout_constraintBottom_toBottomOf="@+id/orderDetailsItemImage"
