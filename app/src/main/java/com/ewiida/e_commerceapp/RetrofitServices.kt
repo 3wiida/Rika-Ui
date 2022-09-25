@@ -5,6 +5,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitServices {
+    // Test
+
     private const val BASE_URL="https://shop.corptia.xyz/api/"
 
 
