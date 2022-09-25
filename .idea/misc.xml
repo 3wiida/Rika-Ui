@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android Projects/Rika/app/src/main/res/drawable/_30_white_rect.xml" value="0.1" />
+        <entry key="..\:/Android Projects/Rika/app/src/main/res/drawable/otp_field.xml" value="0.17" />
         <entry key="..\:/Android Projects/Rika/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Android Projects/Rika/app/src/main/res/layout/activity_otp_check.xml" value="0.2359375" />
         <entry key="..\:/Android Projects/Rika/app/src/main/res/layout/bottom_navigation.xml" value="0.24444444444444444" />
         <entry key="..\:/Android Projects/Rika/app/src/main/res/layout/fragment_cart.xml" value="0.25" />
         <entry key="..\:/Android Projects/Rika/app/src/main/res/layout/fragment_login.xml" value="0.25" />

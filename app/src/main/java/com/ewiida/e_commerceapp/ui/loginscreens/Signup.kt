@@ -29,14 +29,13 @@ class Signup : Fragment() {
 
         binding.signupBtn.setOnClickListener { view : View ->
             lifecycleScope.launch(Dispatchers.IO){
-                var registerResponse=RetrofitServices.rServices.register(binding.nameInput.text.toString(),
-                binding.phoneInput.text.toString(),1,binding.passwordInput.text.toString(),binding.passwordreInput.text.toString(),
-                "123","123","android")
+                var registerResponse=RetrofitServices.rServices.register(binding.phoneInput.text.toString(),
+                    binding.nameInput.text.toString(),1,binding.passwordInput.text.toString(),
+                    binding.passwordreInput.text.toString(),"123","123","android")
 
                 withContext(Dispatchers.IO){
-                    if(registerResponse.status=="success"){
-                        //TODO
-                        USER_TOKEN
+                    if(registerResponse.isSuccessful){
+                        Toast.makeText(requireContext(), "success", Toast.LENGTH_SHORT).show()
                     }else{
                         Toast.makeText(requireContext(), "Error", Toast.LENGTH_SHORT).show()
                     }

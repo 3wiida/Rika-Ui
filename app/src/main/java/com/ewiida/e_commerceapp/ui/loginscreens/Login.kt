@@ -1,6 +1,7 @@
 package com.ewiida.e_commerceapp.ui.loginscreens
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -18,31 +19,43 @@ import com.ewiida.e_commerceapp.utils.sharedpreferences.prefUtils.Companion.save
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import retrofit2.HttpException
+import java.io.IOException
 
 
 class Login : Fragment() {
-
+    val TAG = "3wiida"
     lateinit var binding: FragmentLoginBinding
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login, container, false)
 
-        binding.loginBtn.setOnClickListener { view : View ->
-            lifecycleScope.launch(Dispatchers.IO){
-                var user=RetrofitServices.rServices.login(binding.passwordInput.text.toString(),
-                    binding.passwordInput.text.toString(),
-                    "123","123","android")
-                savePref(requireContext(),USER_TOKEN,user.access_token)
+        binding.loginBtn.setOnClickListener { view: View ->
+            lifecycleScope.launch(Dispatchers.IO) {
 
-                withContext(Dispatchers.Main){
-                    if(user.status=="success"){
-                        view.findNavController().navigate(R.id.action_login_to_successful)
-                        Toast.makeText(requireContext(), "Success", Toast.LENGTH_SHORT).show()
-                    }else{
-                        Toast.makeText(requireContext(), "Error", Toast.LENGTH_SHORT).show()
+                try {
+                    RetrofitServices.rServices.login(
+                        binding.phoneInput.text.toString(),
+                        binding.passwordInput.text.toString(),
+                        "123", "123", "android"
+                    )
+                } catch (e: Exception) {
+                    when (e) {
+                        is HttpException -> {
+                            Log.d(TAG, "onCreateView: " + e.response()?.errorBody()?.string())
+                        }
+                        is IOException -> {
+                            Log.d(TAG, "onCreateView: " + e.localizedMessage)
+                        }
                     }
+                    Log.d(TAG, "onCreateView: ${e.message}")
                 }
+
 
             }
 
@@ -50,10 +63,15 @@ class Login : Fragment() {
         }
 
         binding.passwordInput.addTextChangedListener {
-            if(binding.passwordInput.text.toString().length < 10){
+            if (binding.passwordInput.text.toString().length < 10) {
                 binding.passwordInput.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0)
-            }else{
-                binding.passwordInput.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_baseline_check_circle_24, 0)
+            } else {
+                binding.passwordInput.setCompoundDrawablesWithIntrinsicBounds(
+                    0,
+                    0,
+                    R.drawable.ic_baseline_check_circle_24,
+                    0
+                )
             }
         }
 
