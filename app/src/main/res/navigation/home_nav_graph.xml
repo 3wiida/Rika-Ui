@@ -3,26 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/home_nav_graph"
-    app:startDestination="@id/home2">
+    app:startDestination="@id/menuItemHome">
 
     <fragment
-        android:id="@+id/home2"
-        android:name="com.ewiida.e_commerceapp.homeapp.homepage.HomePage"
+        android:id="@+id/menuItemHome"
+        android:name="com.ewiida.e_commerceapp.ui.homeapp.homepage.HomePage"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/cart"
-        android:name="com.ewiida.e_commerceapp.homeapp.cartpage.CartPage"
+        android:id="@+id/menuItemCart"
+        android:name="com.ewiida.e_commerceapp.ui.homeapp.cartpage.CartPage"
         android:label="fragment_cart"
         tools:layout="@layout/fragment_cart" />
     <fragment
-        android:id="@+id/notifications"
-        android:name="com.ewiida.e_commerceapp.homeapp.notificationspage.NotificationsPage"
+        android:id="@+id/menuItemNotifications"
+        android:name="com.ewiida.e_commerceapp.ui.homeapp.notificationspage.NotificationsPage"
         android:label="fragment_notifications"
         tools:layout="@layout/fragment_notifications" />
     <fragment
-        android:id="@+id/profile"
-        android:name="com.ewiida.e_commerceapp.homeapp.profilepage.Profile"
+        android:id="@+id/menuItemProfile"
+        android:name="com.ewiida.e_commerceapp.ui.homeapp.profilepage.Profile"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

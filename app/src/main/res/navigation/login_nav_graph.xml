@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/splash2"
-        android:name="com.ewiida.e_commerceapp.loginscreens.Splash2"
+        android:name="com.ewiida.e_commerceapp.ui.loginscreens.Splash2"
         android:label="Splash2" >
         <action
             android:id="@+id/action_splash2_to_login"
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/login"
-        android:name="com.ewiida.e_commerceapp.loginscreens.Login"
+        android:name="com.ewiida.e_commerceapp.ui.loginscreens.Login"
         android:label="login" >
         <action
             android:id="@+id/action_login_to_successful"
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/signup"
-        android:name="com.ewiida.e_commerceapp.loginscreens.Signup"
+        android:name="com.ewiida.e_commerceapp.ui.loginscreens.Signup"
         android:label="signup" >
         <action
             android:id="@+id/action_signup_to_successful"
@@ -37,6 +37,6 @@
     </fragment>
     <fragment
         android:id="@+id/successful"
-        android:name="com.ewiida.e_commerceapp.loginscreens.Successful"
+        android:name="com.ewiida.e_commerceapp.ui.loginscreens.Successful"
         android:label="successful" />
 </navigation>

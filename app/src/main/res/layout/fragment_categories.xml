@@ -7,7 +7,7 @@
         android:id="@+id/frameLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".homeapp.homepage.categoriespages.CategoriesFragment">
+        tools:context=".ui.homeapp.homepage.categoriespages.CategoriesFragment">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline79"

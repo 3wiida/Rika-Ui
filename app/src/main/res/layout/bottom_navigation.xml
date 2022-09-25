@@ -6,16 +6,19 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".homeapp.HomeActivity">
+        tools:context=".ui.homeapp.HomeActivity">
 
-        <FrameLayout
+        <fragment
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            app:defaultNavHost="true"
+            android:name="androidx.navigation.fragment.NavHostFragment"
             app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
+            app:navGraph="@navigation/home_nav_graph"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 

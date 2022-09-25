@@ -7,9 +7,9 @@ import android.os.Bundle
 import android.os.Handler
 import android.preference.PreferenceManager
 import android.view.View
-import com.ewiida.e_commerceapp.homeapp.HomeActivity
-import com.ewiida.e_commerceapp.loginscreens.LoginActivity
-import com.ewiida.e_commerceapp.onboarding.OnBoardingActivity
+import com.ewiida.e_commerceapp.ui.homeapp.HomeActivity
+import com.ewiida.e_commerceapp.ui.loginscreens.LoginActivity
+import com.ewiida.e_commerceapp.ui.onboarding.OnBoardingActivity
 
 class MainActivity : AppCompatActivity() {
 

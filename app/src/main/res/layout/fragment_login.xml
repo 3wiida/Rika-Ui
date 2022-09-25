@@ -25,7 +25,7 @@
 
 
         <EditText
-            android:id="@+id/emailInput"
+            android:id="@+id/phoneInput"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_8dp"
@@ -106,7 +106,7 @@
             android:textColor="@color/black"
             android:textSize="@dimen/_16sp"
             app:layout_constraintStart_toStartOf="@+id/guideline27"
-            app:layout_constraintTop_toBottomOf="@+id/emailInput" />
+            app:layout_constraintTop_toBottomOf="@+id/phoneInput" />
 
         <ImageView
             android:id="@+id/loginLogo"

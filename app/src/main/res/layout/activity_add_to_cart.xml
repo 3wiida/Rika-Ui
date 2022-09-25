@@ -51,7 +51,7 @@
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragmentContainerView"
-                android:name="com.ewiida.e_commerceapp.homeapp.homepage.productdetails.ImageSliderFragment"
+                android:name="com.ewiida.e_commerceapp.ui.homeapp.homepage.productdetails.ImageSliderFragment"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"

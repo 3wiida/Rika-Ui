@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "419479866394",
+    "project_id": "rika-4d3af",
+    "storage_bucket": "rika-4d3af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419479866394:android:c651dde3019234433bd5a3",
+        "android_client_info": {
+          "package_name": "com.ewiida.e_commerceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419479866394-vc3hfd7kalqfo7drjc2lgejkbgafcr2k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ0bSPZq_7VHuEVtsGbHyyao7pM2V60OY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419479866394-vc3hfd7kalqfo7drjc2lgejkbgafcr2k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

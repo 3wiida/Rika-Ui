@@ -5,7 +5,7 @@
     <string name="loginButtonText">Login</string>
     <string name="signupButtonText">Sign Up</string>
     <string name="signupFragmentUsernameLabel">User Name</string>
-    <string name="signupFragmentEmailLabel">Email</string>
+    <string name="signupFragmentEmailLabel">Phone Number</string>
     <string name="signupFragmentPasswordLabel">Password</string>
     <string name="signupFragmentConfirmPasswordLabel">Confirm Password</string>
     <string name="signupDescription">Create an new account</string>
@@ -78,7 +78,7 @@
     <string name="enter_your_age">Enter your age</string>
     <string name="_22_years">22 Years</string>
     <string name="email">Email</string>
-    <string name="enter_your_e_mail">Enter your E-mail</string>
+    <string name="enter_your_e_mail">Enter your phone number</string>
     <string name="rikafashionshop_gmail_com">rikafashionshop@gmail.com</string>
     <string name="settings">Settings</string>
     <string name="language">Language</string>
